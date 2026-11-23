@@ -10,6 +10,9 @@ tayangan) — grammar formatnya dipakai, identitas visualnya (nama
 label, palet persis, aset) TIDAK disalin; tiap seri memakai label
 topik dan nama serinya sendiri. Mode D diaktifkan user 23 Nov 2026
 atas keputusannya sendiri: style ini "pas buat style news/berita".
+Amendemen 23 Nov 2026 (dari review user atas produksi Mode D
+pertama): tiga aturan ditambah — foto tokoh wajib, latar tidak
+boleh diam, dan lapisan efek suara (SFX) wajib tipis.
 
 ## Pengecualian terkunci (HANYA berlaku di Mode D)
 
@@ -61,7 +64,9 @@ ditandai, tidak ada CTA jualan).
 
 - Kanvas datar: latar navy gelap polos yang SAMA di semua scene
   grafis (vignette halus diperbolehkan). Tidak ada panggung 3D,
-  tidak ada rig cahaya — konsistensi datang dari template.
+  tidak ada rig cahaya — konsistensi datang dari template. Latar
+  TIDAK BOLEH diam total: gerak latar halus wajib (lihat bagian
+  Gerakan & transisi).
 - Palet terkunci "berita-navy": latar navy gelap; teks putih;
   aksen utama oranye-merah (kata kunci headline, angka besar,
   tanda ✗/penanda masalah); aksen sekunder teal (ikon subjek,
@@ -76,6 +81,23 @@ ditandai, tidak ada CTA jualan).
 - Elemen tetap: pill label topik di atas tengah di SEMUA scene
   (termasuk scene foto) — huruf kapital, letter-spacing lebar,
   outline tipis, tanpa isi.
+
+## Foto tokoh & dokumentasi pendukung (WAJIB)
+
+- Setiap tokoh yang DISEBUT NAMANYA dan menjadi pusat sebuah
+  scene (kandidat, pemberi kutipan, pejabat penentu) WAJIB tampil
+  dengan FOTO ASLI terkredit — bukan avatar inisial, bukan siluet.
+  Foto dicari di Tahap 1 (pengumpulan bahan) dari sumber resmi
+  atau terkredit jelas (biro pers lembaga, kantor berita, media
+  dengan kredit foto, Wikipedia/Wikimedia) dan dicatat sumber +
+  kreditnya di paket produksi; kredit tampil di layar mengikuti
+  aturan foto Mode D.
+- Penempatan baku: foto lingkaran di kartu tokoh/kandidat;
+  foto lingkaran kecil di samping atribusi KartuKutipan; FotoBeat
+  tetap untuk momen peristiwanya.
+- Avatar inisial/siluet HANYA cadangan bila foto benar-benar
+  tidak ditemukan setelah dicari — dan pemakaiannya WAJIB
+  dinyatakan eksplisit di laporan produksi, tidak diam-diam.
 
 ## Caption & sitasi (lebih ketat dari inti)
 
@@ -105,6 +127,7 @@ ditandai, tidak ada CTA jualan).
 2. **FotoBeat** — foto dokumentasi full-bleed + satu teks besar di
    atasnya (kartu waktu "±23.00 WIB" + ikon jam, atau kalimat
    dampak). Untuk beat fakta/emosional, maksimal ±1/3 video.
+   Foto tampil dengan zoom Ken Burns lambat — tidak pernah diam.
 3. **PetaLokator** — peta ilustrasi sederhana: wilayah aksen
    ber-outline + pin + kartu label nama tempat; label "peta
    ilustrasi, tidak berskala" wajib.
@@ -117,7 +140,8 @@ ditandai, tidak ada CTA jualan).
    atau diagram benda (rumah + label bahan). Satu gagasan per scene.
 6. **KartuKutipan** — tanda kutip besar beraksen sekunder + teks
    kutipan (kata kunci beraksen sekunder) + atribusi nama + peran
-   di bawahnya. Hanya kutipan yang benar-benar diucapkan sumber —
+   di bawahnya. Atribusi disertai foto lingkaran kecil tokohnya
+   (lihat aturan foto tokoh). Hanya kutipan yang benar-benar diucapkan sumber —
    dilarang mengarang kutipan; parafrase diberi label "menurut
    <sumber>" tanpa tanda kutip.
 7. **PenutupDampak** — kalimat dampak di atas FotoBeat atau latar
@@ -156,6 +180,34 @@ relevan), dan 7 tidak boleh hilang.
   (pola inti). Dilarang transisi dekoratif (wipe berputar, zoom
   gambar 2D mensimulasikan kamera 3D).
 - Kamera statis. Yang bergerak adalah elemen di dalam scene.
+- **Gerak latar halus WAJIB**: latar navy tidak boleh beku —
+  pakai drift gradasi sangat lambat, grid/garis samar yang
+  bergerak perlahan, atau partikel debu cahaya tipis; semuanya
+  deterministik dari `useCurrentFrame()` dan cukup halus untuk
+  tidak merebut perhatian dari isi.
+- **Ukuran minimal gerak**: di setiap scene, selain karaoke,
+  minimal ada SATU elemen yang bergerak terus atau berubah
+  mengikuti isi kalimat yang sedang dibacakan (foto ber-Ken
+  Burns, angka menghitung, jalur tergambar, latar berdrift).
+  Scene yang seluruh elemennya diam setelah pop-in pembuka
+  dianggap GAGAL QC.
+
+## Lapisan efek suara (SFX — WAJIB, tipis)
+
+- Narasi tetap audio utama. Di bawahnya WAJIB ada lapisan SFX
+  tipis yang menandai beat visual — video tanpa SFX terasa datar
+  dan dianggap belum selesai.
+- Peta bunyi baku: **whoosh** lembut tiap pergantian scene;
+  **pop** saat kartu/elemen utama masuk; **sobek kertas/amplop**
+  untuk beat dokumen, surat, dan amplop; **shutter kamera** saat
+  FotoBeat masuk; **duk stempel** untuk stempel/vonis/keputusan;
+  **ding** lembut saat kata kunci kutipan menyala.
+- Level SFX jauh di bawah narasi (patokan: puncak SFX ±15–20 dB
+  di bawah puncak narasi; loudness akhir video tetap lolos
+  gerbang inti). SFX tidak pernah menutupi suku kata narasi.
+- Sumber SFX hanya yang bebas lisensi atau dibangkitkan sendiri
+  (sintesis) — dilarang mengambil dari video/karya berhak cipta.
+  Daftar SFX yang dipakai dicatat di paket produksi.
 
 ## QC khusus Mode D (menambah QC inti)
 
@@ -172,3 +224,9 @@ relevan), dan 7 tidak boleh hilang.
   vektor dari kode.
 - Penutup memuat verdict + pertanyaan terbuka spesifik; BUKAN
   kesimpulan netral ala Mode A dan bukan CTA jualan.
+- Setiap tokoh pusat bernama tampil dengan foto asli terkredit;
+  avatar inisial hanya cadangan yang dinyatakan di laporan.
+- Tidak ada scene yang seluruh elemennya diam: gerak latar halus
+  berjalan dan foto selalu ber-Ken Burns.
+- Lapisan SFX hadir mengikuti peta bunyi baku dan tidak menutupi
+  narasi (loudness akhir tetap lolos gerbang inti).
