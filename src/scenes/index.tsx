@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, interpolate} from 'remotion';
+import {AbsoluteFill, Img, interpolate, staticFile} from 'remotion';
 import {C, FONT} from '../theme';
 import {Appear, Check, Chip, Cross, Foto, FotoBulat, FotoKredit, Headline, Pop, prog} from '../components/ui';
 import {Amplop, GedungParlemen, Jam, Kalender, Kursi, Pin, Siluet, Surat} from '../components/icons';
@@ -90,45 +90,54 @@ const S3: React.FC<{t: number}> = ({t}) => {
   );
 };
 
-// ---------- S4 FotoBeat: pukul 16.48, surat ke Ketua MPR ----------
+// ---------- S4 FotoBeat: pukul 16.48 — foto peristiwa 23/11 (utuh, watermark tidak dipotong) ----------
+const KartuFoto: React.FC<{t: number; a: number; b: number; src: string; w: number; h: number; style?: React.CSSProperties}> = ({t, a, b, src, w, h, style}) => {
+  const k = interpolate(t, [a, b], [1.0, 1.05], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <div style={{position: 'absolute', left: (1080 - w) / 2, width: w, height: h, borderRadius: 22, overflow: 'hidden', border: `4px solid ${C.white}`, boxShadow: '0 16px 40px rgba(0,0,0,0.5)', transform: `scale(${k})`, ...style}}>
+      <Img src={staticFile(`foto/${src}`)} style={{width: '100%', height: '100%', objectFit: 'contain', background: '#000'}} />
+    </div>
+  );
+};
 const S4: React.FC<{t: number}> = ({t}) => {
-  const move = prog(t, 15.92, 0.9);
+  const swap = prog(t, 15.92, 0.35);
   return (
     <AbsoluteFill>
-      <AbsoluteFill style={{opacity: 0.55}}><Foto src="paripurna.jpg" pos="70% 50%" t={t} a={13.62} b={19.42} origin="65% 40%" /></AbsoluteFill>
-      <AbsoluteFill style={{background: 'linear-gradient(to bottom, rgba(10,22,48,0.6), rgba(10,22,48,0.2) 40%, rgba(10,22,48,0.7))'}} />
-      <FotoKredit text="foto arsip 20/10/2024: Setkab RI · Wikimedia Commons (domain publik)" />
-      <div style={{position: 'absolute', top: 410, left: 54}}><Chip text="FOTO ARSIP 2024" color={C.white} style={{fontSize: 22}} /></div>
-      <Col top={520} gap={20}>
+      <Col top={400} gap={20}>
         <Pop t={t} at={13.62}>
-          <div style={{display: 'flex', alignItems: 'center', gap: 28, background: 'rgba(10,22,48,0.85)', borderRadius: 28, padding: '22px 40px'}}>
-            <Jam size={130} h={16} m={48} />
-            <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 150, color: C.white, lineHeight: 1}}>
+          <div style={{display: 'flex', alignItems: 'center', gap: 24, background: 'rgba(10,22,48,0.85)', border: `3px solid ${C.line}`, borderRadius: 26, padding: '14px 34px'}}>
+            <Jam size={86} h={16} m={48} />
+            <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 104, color: C.white, lineHeight: 1}}>
               16.<span style={{color: C.accent}}>48</span>
             </div>
-            <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 44, color: C.white}}>WIB</div>
+            <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 40, color: C.white}}>WIB</div>
           </div>
         </Pop>
       </Col>
-      {/* surat bergerak ke Ketua MPR */}
-      <div style={{position: 'absolute', top: 900, left: 120 + move * 520, opacity: prog(t, 15.7, 0.25) * (1 - prog(t, 17.3, 0.3))}}>
-        <Surat size={140} />
+      <div style={{opacity: prog(t, 13.7, 0.3) * (1 - swap)}}>
+        <KartuFoto t={t} a={13.62} b={16.3} src="antara-tiba-20261123.jpg" w={960} h={640} style={{top: 590}} />
+        <div style={{position: 'absolute', top: 1246, left: 60, right: 60, textAlign: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 34, color: C.white}}>Tiba di Kompleks Parlemen, Senayan</div>
       </div>
-      <div style={{position: 'absolute', top: 880, left: 90, opacity: prog(t, 15.6)}}>
-        <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 30, color: C.white, background: 'rgba(10,22,48,0.8)', padding: '10px 18px', borderRadius: 12}}>SURAT USULAN</div>
+      <div style={{opacity: swap}}>
+        <KartuFoto t={t} a={15.92} b={19.42} src="kompas-serah-20261123.jpg" w={960} h={540} style={{top: 600}} />
       </div>
-      {t >= 17.44 && <FotoKredit bawah text="foto Ahmad Muzani: KPU RI (2023) · Wikimedia Commons (domain publik)" />}
-      <div style={{position: 'absolute', top: 1080, left: 0, right: 0, display: 'flex', justifyContent: 'center'}}>
+      {t < 15.92 ? (
+        <FotoKredit text="foto: ANTARA/HO-DPR RI (23/11/2026)" />
+      ) : (
+        <FotoKredit text="foto: KOMPAS.com (23/11/2026)" />
+      )}
+      <div style={{position: 'absolute', top: 1172, left: 0, right: 0, display: 'flex', justifyContent: 'center'}}>
         <Appear t={t} at={17.44}>
-          <div style={{display: 'flex', alignItems: 'center', gap: 26, background: C.white, borderRadius: 120, padding: '14px 40px 14px 14px', fontFamily: FONT, color: C.bg}}>
-            <FotoBulat src="muzani-2024.jpg" size={190} t={t} a={17.44} b={19.42} pos="50% 22%" ring={C.teal} />
+          <div style={{display: 'flex', alignItems: 'center', gap: 22, background: C.white, borderRadius: 120, padding: '10px 36px 10px 10px', fontFamily: FONT, color: C.bg, boxShadow: '0 10px 30px rgba(0,0,0,0.45)'}}>
+            <FotoBulat src="muzani-2024.jpg" size={150} t={t} a={17.44} b={19.42} pos="50% 22%" ring={C.teal} />
             <div>
-              <div style={{fontWeight: 700, fontSize: 30, letterSpacing: '0.1em'}}>DITERIMA KETUA MPR</div>
-              <div style={{fontWeight: 900, fontSize: 56}}>AHMAD MUZANI</div>
+              <div style={{fontWeight: 700, fontSize: 28, letterSpacing: '0.1em'}}>DITERIMA KETUA MPR</div>
+              <div style={{fontWeight: 900, fontSize: 52}}>AHMAD MUZANI</div>
             </div>
           </div>
         </Appear>
       </div>
+      {t >= 17.44 && <FotoKredit bawah text="foto Ahmad Muzani: KPU RI (2023) · Wikimedia Commons (domain publik)" />}
     </AbsoluteFill>
   );
 };

@@ -10,7 +10,7 @@ Preview: `out/pengganti-wapres-preview.mp4` (skala 0,5) · Contact sheet: `out/c
 | 1 | Kursi wakil presiden kosong sejak 12 November. | 0,00–2,62 | 1 KartuHook |
 | 2 | Hari ini, amplop putih itu akhirnya dibuka. | 2,90–6,22 | 2 Hook langkah 2 |
 | 3 | Senin sore, 23 November 2026, Presiden Prabowo datang langsung ke Gedung MPR, Senayan. | 6,46–13,42 | 3 PetaLokator |
-| 4 | Pukul 16.48, ia menyerahkan surat usulan kepada Ketua MPR Ahmad Muzani. | 13,62–19,24 | 4 FotoBeat |
+| 4 | CNN Indonesia, Kompas, ANTARA | Foto peristiwa 23/11/2026 tampil UTUH (watermark tidak dipotong): Prabowo tiba disambut Muzani — ANTARA/HO-DPR RI (handout DPR, kategori 1); penyerahan surat/jabat tangan — KOMPAS.com (kategori 3, BERHAK CIPTA, dipakai atas keputusan operator 23/11/2026) · Muzani (KPU RI 2023, PD-IDGov) |
 | 5–7 | Isinya dua nama. / Satu: Andi Amran Sulaiman… / Dua: Sugiono… | 19,42–29,32 | 5 Kartu kandidat |
 | 8 | Nama Dasco yang ramai digadang-gadang justru tidak ada. | 29,32–32,82 | 6 |
 | 9–10 | Kenapa harus dua nama? / Pasal 8 ayat 2 UUD 1945… | 33,00–45,74 | 7 ScenePenjelasan |
@@ -66,6 +66,8 @@ Timing: Whisper large-v3 (`language="id"` dipaksa), teks dari naskah. Catatan: n
 | mahfud.png | "Mahfud MD, Menkopolhukam (2022).png" — Kemenko Polhukam | PD-IDGov | 23/11/2026 | 172×229 |
 | muzani-2024.jpg | "Ahmad Muzani, Gerindra candidate for Lampung I in 2024.jpg" — KPU RI | PD-IDGov | 23/11/2026 | 960×1440 |
 | mpr-konpers-20261123.png | mpr.go.id/berita/ahmad-muzani-perubahan-sidang-paripurna-11-desember — MPR RI | domain publik (UU 28/2014 Ps. 43b) | 23/11/2026 | 750×482 |
+| antara-tiba-20261123.jpg | sulteng.antaranews.com/berita/401843 — kredit "ANTARA/HO-DPR RI" (handout DPR RI) | kategori 1: rilis lembaga (handout); watermark ANTARA dibiarkan utuh | 23/11/2026 | 1200×800 |
+| kompas-serah-20261123.jpg | nasional.kompas.com/read/2026/11/23/17054041 — KOMPAS.com (kemungkinan tangkapan siaran YouTube Sekretariat Presiden) | kategori 3: BERHAK CIPTA — dipakai atas keputusan operator; risiko klaim/takedown ditanggung operator; watermark Kompas utuh | 23/11/2026 | 1200×675 |
 | SFX (whoosh, pop, tear, shutter, stamp, ding) | disintesis sendiri (`tools/sfx.py`, seed tetap) | milik sendiri | — | 240 KB |
 | Font Inter 500–900 | @fontsource/inter | SIL OFL | — | ~ 100 KB |
 
@@ -88,9 +90,11 @@ Tidak ada (produksi Mode D pertama — Gerbang 1 & 2 format penuh, 3 still/scene
 > Menurutmu, siapa yang lebih pantas: Amran, atau Sugiono? Tulis alasanmu di komentar.
 >
 > Sumber: CNN Indonesia, Kompas, ANTARA, NU Online, detik, Katadata.
-> Foto: Kemensetneg, Setkab RI, Kemlu RI, Pemprov Banten, DPR RI, Kemenko Polhukam, KPU RI (domain publik, via Wikimedia Commons).
+> Foto: Kemensetneg, Kemlu RI, Pemprov Banten, DPR RI, Kemenko Polhukam, KPU RI (domain publik, via Wikimedia Commons); MPR RI; ANTARA/HO-DPR RI; KOMPAS.com.
 >
 > Basabasi Berita
 > #wakilpresiden #MPR #Prabowo #AmranSulaiman #Sugiono #UUD1945 #beritaterkini #basabasi
 
 Revisi 2 (v3.4, hierarki sumber foto): scene 9 memakai foto resmi MPR RI hari ini (konferensi pers jadwal 11 Des). Foto penyerahan surat (scene 4) belum dirilis sumber resmi saat produksi — Setkab/MPR belum memuat, presidenri.go.id & dpr.go.id menolak akses otomatis (403) — sehingga scene 4 tetap foto arsip 2024 berlabel FOTO ARSIP (kategori 4).
+
+Revisi 3 (operator memilih opsi 3 — foto jurnalis): scene 4 tidak lagi memakai foto arsip 2024. Diganti foto peristiwa 23/11/2026: (a) kedatangan Presiden — ANTARA/HO-DPR RI; (b) penyerahan surat — KOMPAS.com (berhak cipta, keputusan operator). Kedua foto tampil utuh sebagai kartu (object-fit contain), Ken Burns dilakukan pada skala kartu sehingga watermark tidak terpotong. Bila foto resmi Setpres/MPR penyerahan surat terbit, disarankan mengganti foto KOMPAS.com (render ulang scene 4 saja ±30 dtk).
