@@ -2,191 +2,151 @@
  {
   "t": 0.0,
   "sfx": "pop",
-  "beat": "S1 12 NOV masuk"
+  "beat": "S1 chip + lencana masuk"
  },
  {
-  "t": 0.98,
+  "t": 2.96,
   "sfx": "stamp",
-  "beat": "S1 tanda ✗ kosong"
+  "beat": "S1 tanda ✗ di kata makar"
  },
  {
-  "t": 2.72,
+  "t": 5.84,
   "sfx": "whoosh",
-  "beat": "pergantian ke scene 2"
+  "beat": "ke S2"
  },
  {
-  "t": 3.94,
+  "t": 8.3,
   "sfx": "pop",
-  "beat": "S2 amplop masuk"
+  "beat": "S2 headline 6 tersangka"
  },
  {
-  "t": 5.0,
-  "sfx": "tear",
-  "beat": "S2 amplop dibuka"
+  "t": 9.52,
+  "sfx": "pop",
+  "beat": "S2 kartu Listyo"
  },
  {
-  "t": 6.28,
+  "t": 12.46,
+  "sfx": "pop",
+  "beat": "S2 kartu 5 perwira"
+ },
+ {
+  "t": 13.82,
   "sfx": "whoosh",
-  "beat": "pergantian ke scene 3"
+  "beat": "ke S3"
  },
  {
-  "t": 7.52,
-  "sfx": "pop",
-  "beat": "S3 tanggal"
- },
- {
-  "t": 10.16,
-  "sfx": "pop",
-  "beat": "S3 foto Presiden"
- },
- {
-  "t": 12.14,
-  "sfx": "pop",
-  "beat": "S3 pin Gedung MPR"
- },
- {
-  "t": 13.44,
-  "sfx": "whoosh",
-  "beat": "pergantian ke scene 4"
- },
- {
-  "t": 13.62,
+  "t": 13.95,
   "sfx": "shutter",
-  "beat": "S4 FotoBeat masuk"
+  "beat": "S3 KartuFoto konpers"
  },
  {
-  "t": 15.92,
+  "t": 18.86,
+  "sfx": "whoosh",
+  "beat": "ke S4"
+ },
+ {
+  "t": 22.14,
+  "sfx": "pop",
+  "beat": "S4 tahap 1"
+ },
+ {
+  "t": 28.9,
   "sfx": "tear",
-  "beat": "S4 surat usulan"
+  "beat": "S4 dokumen ditemukan"
  },
  {
-  "t": 17.44,
+  "t": 32.34,
   "sfx": "pop",
-  "beat": "S4 kartu Ketua MPR"
+  "beat": "S4 tahap 2"
  },
  {
-  "t": 19.24,
+  "t": 35.64,
+  "sfx": "pop",
+  "beat": "S4 tahap 3"
+ },
+ {
+  "t": 38.24,
   "sfx": "whoosh",
-  "beat": "pergantian ke scene 5"
+  "beat": "ke S5"
  },
  {
-  "t": 19.42,
-  "sfx": "pop",
-  "beat": "S5 2 nama"
+  "t": 38.37,
+  "sfx": "shutter",
+  "beat": "S5 KartuFoto ANTARA"
  },
  {
-  "t": 21.04,
-  "sfx": "pop",
-  "beat": "S5 kartu Amran"
- },
- {
-  "t": 24.5,
-  "sfx": "pop",
-  "beat": "S5 kartu Sugiono"
- },
- {
-  "t": 29.14,
-  "sfx": "whoosh",
-  "beat": "pergantian ke scene 6"
- },
- {
-  "t": 29.98,
-  "sfx": "pop",
-  "beat": "S6 kartu Dasco"
- },
- {
-  "t": 32.28,
-  "sfx": "stamp",
-  "beat": "S6 tidak ada"
- },
- {
-  "t": 32.82,
-  "sfx": "whoosh",
-  "beat": "pergantian ke scene 7"
- },
- {
-  "t": 33.0,
-  "sfx": "pop",
-  "beat": "S7 pertanyaan"
- },
- {
-  "t": 34.38,
-  "sfx": "pop",
-  "beat": "S7 Pasal 8 ayat 2"
- },
- {
-  "t": 39.38,
-  "sfx": "pop",
-  "beat": "S7 langkah 1"
- },
- {
-  "t": 41.18,
-  "sfx": "pop",
-  "beat": "S7 langkah 2"
- },
- {
-  "t": 43.12,
-  "sfx": "pop",
-  "beat": "S7 langkah 3"
- },
- {
-  "t": 44.48,
-  "sfx": "stamp",
-  "beat": "S7 MPR pilih satu"
- },
- {
-  "t": 45.88,
-  "sfx": "whoosh",
-  "beat": "pergantian ke scene 8"
- },
- {
-  "t": 47.86,
-  "sfx": "pop",
-  "beat": "S8 Mahfud"
- },
- {
-  "t": 51.9,
+  "t": 40.3,
   "sfx": "ding",
-  "beat": "S8 hari kerja"
+  "beat": "S5 motif menyala"
  },
  {
-  "t": 52.9,
-  "sfx": "stamp",
-  "beat": "S8 hari kalender ✗"
- },
- {
-  "t": 54.08,
+  "t": 46.48,
   "sfx": "whoosh",
-  "beat": "pergantian ke scene 9"
+  "beat": "ke S6"
  },
  {
-  "t": 57.0,
+  "t": 49.66,
   "sfx": "stamp",
-  "beat": "S9 9 Des ✗"
+  "beat": "S6 pidana mati"
  },
  {
-  "t": 58.26,
+  "t": 50.66,
   "sfx": "pop",
-  "beat": "S9 11 Des ✓"
+  "beat": "S6 seumur hidup"
  },
  {
-  "t": 64.66,
-  "sfx": "ding",
-  "beat": "S9 hitungan 14 selesai"
+  "t": 52.06,
+  "sfx": "pop",
+  "beat": "S6 20 tahun"
  },
  {
-  "t": 65.4,
+  "t": 53.82,
   "sfx": "whoosh",
-  "beat": "pergantian ke scene 10"
+  "beat": "ke S7"
  },
  {
-  "t": 65.9,
+  "t": 56.74,
+  "sfx": "shutter",
+  "beat": "S7 foto barang bukti"
+ },
+ {
+  "t": 58.16,
   "sfx": "pop",
-  "beat": "S10 dua kandidat"
+  "beat": "S7 Rp735 juta"
  },
  {
-  "t": 70.62,
+  "t": 60.14,
+  "sfx": "whoosh",
+  "beat": "ke S8"
+ },
+ {
+  "t": 63.9,
+  "sfx": "stamp",
+  "beat": "S8 stempel belum ada putusan"
+ },
+ {
+  "t": 66.04,
+  "sfx": "pop",
+  "beat": "S8 praduga tak bersalah"
+ },
+ {
+  "t": 67.6,
   "sfx": "ding",
-  "beat": "S10 pertanyaan penutup"
+  "beat": "S8 centang"
+ },
+ {
+  "t": 68.2,
+  "sfx": "whoosh",
+  "beat": "ke S9"
+ },
+ {
+  "t": 69.0,
+  "sfx": "pop",
+  "beat": "S9 lencana"
+ },
+ {
+  "t": 73.7,
+  "sfx": "ding",
+  "beat": "S9 pertanyaan"
  }
 ]
