@@ -12,14 +12,13 @@ topik dan nama serinya sendiri. Mode D diaktifkan user 23 Nov 2026
 atas keputusannya sendiri: style ini "pas buat style news/berita".
 Amendemen 23 Nov 2026 (dari review user atas produksi Mode D
 pertama): tiga aturan ditambah — foto tokoh wajib, latar tidak
-boleh diam, dan lapisan efek suara (SFX) wajib tipis.
-Amendemen v3.4 (23 Nov 2026, review user produksi pertama): foto
-peristiwa AKTUAL wajib dicari lewat liputan berita, lalu dilacak
-ke sumber aslinya (hierarki sumber foto); foto tokoh wajib versi
-TERBARU (potret resmi masa jabatan berjalan).
+boleh diam, dan lapisan efek suara (SFX) wajib tipis. Pengetatan
+lanjutan di hari yang sama: prioritas dokumentasi peristiwa di
+atas foto resmi/arsip, dan potongan foto formal wajib ter-center.
 Amendemen v3.5 (23 Nov 2026, review user): aturan watermark foto
 berita — foto ber-watermark tampil UTUH sebagai KartuFoto, tidak
-pernah dipotong; kredit "HO" dikenali sebagai rilis lembaga.
+pernah dipotong; kredit "HO" dikenali sebagai rilis lembaga;
+kredit foto pers bukan izin pakai.
 
 ## Pengecualian terkunci (HANYA berlaku di Mode D)
 
@@ -99,58 +98,42 @@ ditandai, tidak ada CTA jualan).
   dengan kredit foto, Wikipedia/Wikimedia) dan dicatat sumber +
   kreditnya di paket produksi; kredit tampil di layar mengikuti
   aturan foto Mode D.
+- **Prioritas sumber dokumentasi (berjenjang, wajib berurutan)**:
+  (1) dokumentasi PERISTIWA itu sendiri — foto pers hari yang
+  sama dari biro pers/agensi/media (mis. BPMI Setpres, ANTARA,
+  foto wartawan media) yang memperlihatkan momennya atau tokohnya
+  di lokasi kejadian; ini wajib dicari PERTAMA. (2) foto resmi/
+  portret tokoh — hanya bila tokohnya tidak tertangkap
+  dokumentasi peristiwa. (3) foto arsip lama — jalan terakhir,
+  dan wajib dilabeli "foto arsip <tahun>" di layar. Scene momen
+  (FotoBeat) DILARANG memakai foto stok/arsip bila dokumentasi
+  peristiwanya tersedia; kartu tokoh mengutamakan crop dari
+  dokumentasi peristiwa sebelum portret studio — KECUALI foto
+  ber-watermark, yang tidak boleh di-crop (lihat "Watermark foto
+  berita"); untuk kartu tokoh pakai foto tanpa watermark.
+- **Kredit "HO" & status hak cipta**: kredit kantor berita
+  berpola "<MEDIA>/HO-<LEMBAGA>" (mis. "ANTARA/HO-DPR RI") berarti
+  foto HANDOUT lembaga itu — bila lembaganya instansi negara,
+  statusnya rilis resmi (domain publik, UU 28/2014 Pasal 43 huruf
+  b); tulis kredit persis seperti di sumber. Kartu media yang
+  menyebut sumber resmi (mis. "YouTube Sekretariat Presiden")
+  dilacak ke sumber resminya dulu. Foto karya jurnalis media
+  (Kompas, detik, ANTARA non-HO, dsb.) BERHAK CIPTA — kredit bukan
+  izin; dipakai hanya atas keputusan operator per video, dicatat
+  di laporan beserta risikonya (klaim/takedown).
 - Penempatan baku: foto lingkaran di kartu tokoh/kandidat;
   foto lingkaran kecil di samping atribusi KartuKutipan; FotoBeat
   tetap untuk momen peristiwanya.
+- **Potongan foto formal wajib ter-center**: titik potong foto
+  resmi/portret disesuaikan agar wajah subjek berada di TENGAH
+  bingkai (lingkaran/kartu), posisi vertikal di sepertiga atas,
+  dengan ruang kepala yang konsisten antar kartu dalam satu
+  video. Hasil crop diperiksa di still QC — wajah yang kepotong,
+  minggir, atau terlalu kecil/besar dibetulkan titik potongnya
+  (object-position) sebelum render, bukan dibiarkan.
 - Avatar inisial/siluet HANYA cadangan bila foto benar-benar
   tidak ditemukan setelah dicari — dan pemakaiannya WAJIB
   dinyatakan eksplisit di laporan produksi, tidak diam-diam.
-- Foto tokoh WAJIB versi TERBARU: utamakan potret resmi masa
-  jabatan berjalan (mis. potret DPR/MPR/kabinet periode
-  sekarang). Foto lama (>3 tahun) atau cuplikan frame video hanya
-  cadangan, dan labelnya "foto arsip <tahun>" wajib tampil.
-
-## Hierarki sumber foto (amendemen v3.4)
-
-Momen PERISTIWA-nya sendiri (penyerahan surat, sidang, lokasi
-kejadian) WAJIB diusahakan tampil dengan foto peristiwa itu —
-foto arsip acara lain hanya cadangan berlabel "FOTO ARSIP".
-Cara mencarinya: telusuri liputan berita peristiwa itu (pencarian
-gambar/berita: Kompas, detik, ANTARA, CNN Indonesia, Tempo, kanal
-YouTube media & lembaga). Liputan berita dipakai untuk MENEMUKAN
-foto, lalu foto dilacak ke sumber ASLINYA. Pakai urutan ini:
-
-1. **Rilis resmi lembaga pemerintah RI** — Sekretariat Presiden /
-   BPMI Setpres, Setkab, Kemensetneg, MPR, DPR, DPD, kementerian,
-   KPU, pemda. Foto/rilis yang dipublikasikan lembaga negara
-   berstatus domain publik di Indonesia (UU 28/2014 Pasal 43 huruf
-   b; di Wikimedia Commons berlabel PD-IDGov). Banyak foto di
-   kartu berita media sebenarnya berasal dari sini (cek tulisan
-   kecil "foto: BPMI Setpres", "YouTube Sekretariat Presiden",
-   "dok. MPR") — ambil dari situs/kanal lembaganya, bukan dari
-   kartu media. Kredit: "foto: <lembaga> (<tanggal>)".
-2. **Berlisensi terbuka** — Wikimedia Commons (PD-IDGov, CC0,
-   CC BY; cek badge lisensi di halaman file), foto pers yang
-   dirilis CC BY.
-3. **Foto jurnalis media/kantor berita** (Kompas, detik, ANTARA,
-   Tempo, Getty, dsb.) — BERHAK CIPTA; kredit TIDAK sama dengan
-   izin. Hanya boleh dipakai bila operator memutuskannya untuk
-   video itu (dicatat di laporan sebagai "foto berhak cipta,
-   dipakai atas keputusan operator"), dengan kredit lengkap
-   "foto: <fotografer>/<media>". Dilarang memotong/menghapus
-   watermark, dilarang memakai kartu/thumbnail berita yang sudah
-   berisi teks/desain media lain, dan dilarang screenshot siaran
-   TV. Risiko klaim hak cipta/takedown ditanggung operator —
-   sesi wajib menyebutkannya saat mengusulkan foto kategori ini.
-   Kredit kantor berita berpola "<MEDIA>/HO-<LEMBAGA>" (mis.
-   "ANTARA/HO-DPR RI") berarti foto HANDOUT dari lembaga itu —
-   perlakukan sebagai kategori 1 bila lembaganya instansi negara,
-   kredit ditulis persis seperti di sumber ("foto: ANTARA/HO-DPR
-   RI (<tanggal>)"). Kartu media yang mencantumkan sumber resmi
-   (mis. "YouTube Sekretariat Presiden") wajib dicoba dilacak ke
-   sumber resminya dulu sebelum jatuh ke kategori 3.
-4. **Cadangan** — foto arsip acara lain (berlabel FOTO ARSIP)
-   atau ilustrasi vektor; dinyatakan di laporan.
 
 ### Watermark foto berita (amendemen v3.5)
 
@@ -172,20 +155,14 @@ sudut, banner nama media di bawah). Aturannya:
   boleh menimpa area watermark; atur tata letak di sekitarnya.
 - Kredit foto tetap wajib tampil (kanan atas) walau watermark
   sudah menyebut medianya — watermark bukan pengganti kredit.
-- Pakai file dengan resolusi terbaik yang disajikan halaman
-  artikel (og:image / gambar utama); jangan memakai versi
-  thumbnail kartu berita yang sudah ditambahi judul/desain.
+- Pakai file resolusi terbaik dari halaman artikel (og:image /
+  gambar utama); jangan memakai thumbnail kartu berita yang sudah
+  ditambahi judul/desain, dan jangan screenshot siaran TV.
 - Foto TANPA watermark (rilis resmi, Commons) tetap boleh
   full-bleed / lingkaran / blur seperti biasa.
-- Laporan akhir mencatat per foto: ada/tidaknya watermark dan
-  konfirmasi bahwa watermark utuh di semua frame.
-
-Unduh file ke `public/foto/` (vendor, tanpa hotlink), catat per
-foto: URL sumber asli, pembuat/lembaga, tanggal, status lisensi,
-dan kategori hierarki (1–4) di laporan akhir. Host situs lembaga
-yang dibutuhkan (mis. presidenri.go.id, setneg.go.id, mpr.go.id,
-dpr.go.id) diminta ke allowlist environment sekali, saat pertama
-dibutuhkan.
+- Laporan akhir mencatat per foto: ada/tidaknya watermark, status
+  hak cipta (rilis resmi/HO, lisensi terbuka, atau berhak cipta +
+  keputusan operator), dan konfirmasi watermark utuh di semua frame.
 
 ## Caption & sitasi (lebih ketat dari inti)
 
@@ -216,8 +193,6 @@ dibutuhkan.
    atasnya (kartu waktu "±23.00 WIB" + ikon jam, atau kalimat
    dampak). Untuk beat fakta/emosional, maksimal ±1/3 video.
    Foto tampil dengan zoom Ken Burns lambat — tidak pernah diam.
-   Foto ber-watermark TIDAK boleh full-bleed: pakai KartuFoto
-   (lihat "Watermark foto berita").
 3. **PetaLokator** — peta ilustrasi sederhana: wilayah aksen
    ber-outline + pin + kartu label nama tempat; label "peta
    ilustrasi, tidak berskala" wajib.
@@ -314,16 +289,15 @@ relevan), dan 7 tidak boleh hilang.
   vektor dari kode.
 - Penutup memuat verdict + pertanyaan terbuka spesifik; BUKAN
   kesimpulan netral ala Mode A dan bukan CTA jualan.
-- Setiap tokoh pusat bernama tampil dengan foto asli terkredit
-  versi terbaru; avatar inisial hanya cadangan yang dinyatakan di
-  laporan.
-- Momen peristiwa memakai foto peristiwa itu bila ada di
-  kategori 1–2 hierarki sumber foto; foto arsip/berhak cipta
-  dinyatakan di laporan beserta kategorinya.
+- Setiap tokoh pusat bernama tampil dengan foto asli terkredit;
+  avatar inisial hanya cadangan yang dinyatakan di laporan.
+- Dokumentasi mengikuti prioritas sumber (peristiwa > resmi >
+  arsip berlabel tahun) dan potongan foto formal ter-center:
+  wajah di tengah bingkai, ruang kepala konsisten antar kartu.
 - Tidak ada scene yang seluruh elemennya diam: gerak latar halus
   berjalan dan foto selalu ber-Ken Burns.
+- Lapisan SFX hadir mengikuti peta bunyi baku dan tidak menutupi
+  narasi (loudness akhir tetap lolos gerbang inti).
 - Watermark foto berita utuh di setiap frame (tidak terpotong
   oleh crop, lingkaran, blur, zoom, atau elemen lain); foto
   ber-watermark hanya tampil sebagai KartuFoto; kredit tetap ada.
-- Lapisan SFX hadir mengikuti peta bunyi baku dan tidak menutupi
-  narasi (loudness akhir tetap lolos gerbang inti).
