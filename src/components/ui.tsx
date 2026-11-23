@@ -73,13 +73,26 @@ export const Chip: React.FC<{text: string; color?: string; style?: React.CSSProp
 );
 
 export const FotoKredit: React.FC<{text: string; bawah?: boolean}> = ({text, bawah}) => (
-  <div style={{whiteSpace: 'nowrap', fontSize: bawah ? Math.min(22, fitSize([text], 600, 22)) : 22, position: 'absolute', ...(bawah ? {top: 1366, left: 54, right: 54, maxWidth: 'none', textAlign: 'center', background: 'transparent'} : {top: 350, right: 54}), fontFamily: FONT, fontWeight: 600, color: 'rgba(255,255,255,0.85)', background: 'rgba(0,0,0,0.45)', padding: '6px 12px', borderRadius: 8, maxWidth: 700, textAlign: 'right', ...(bawah ? {maxWidth: 'none', textAlign: 'center', background: 'transparent', padding: 0, color: 'rgba(147,166,204,0.95)'} : {})}}>
+  <div style={{whiteSpace: 'nowrap', fontSize: Math.min(22, fitSize([text], 600, 22, bawah ? 972 : 680)), position: 'absolute', ...(bawah ? {top: 1366, left: 54, right: 54, maxWidth: 'none', textAlign: 'center', background: 'transparent'} : {top: 350, right: 54}), fontFamily: FONT, fontWeight: 600, color: 'rgba(255,255,255,0.85)', background: 'rgba(0,0,0,0.45)', padding: '6px 12px', borderRadius: 8, maxWidth: 700, textAlign: 'right', ...(bawah ? {maxWidth: 'none', textAlign: 'center', background: 'transparent', padding: 0, color: 'rgba(147,166,204,0.95)'} : {})}}>
     {text}
   </div>
 );
 
-export const Foto: React.FC<{src: string; style?: React.CSSProperties; pos?: string}> = ({src, style, pos = 'center'}) => (
-  <Img src={staticFile(`foto/${src}`)} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: pos, ...style}} />
+/** Foto selalu ber-Ken Burns: zoom lambat 1.00 → 1.10 sepanjang rentang [a, b] detik (v3.3) */
+export const Foto: React.FC<{src: string; t: number; a: number; b: number; style?: React.CSSProperties; pos?: string; origin?: string}> = ({src, t, a, b, style, pos = 'center', origin = '50% 35%'}) => {
+  const k = interpolate(t, [a, b], [1.0, 1.1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <div style={{width: '100%', height: '100%', overflow: 'hidden'}}>
+      <Img src={staticFile(`foto/${src}`)} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: pos, transform: `scale(${k})`, transformOrigin: origin, ...style}} />
+    </div>
+  );
+};
+
+/** Foto lingkaran untuk kartu tokoh (aturan foto tokoh v3.3) */
+export const FotoBulat: React.FC<{src: string; size: number; t: number; a: number; b: number; pos?: string; ring?: string}> = ({src, size, t, a, b, pos = '50% 25%', ring = C.white}) => (
+  <div style={{width: size, height: size, borderRadius: '50%', overflow: 'hidden', border: `${Math.max(4, size * 0.025)}px solid ${ring}`, boxShadow: '0 10px 30px rgba(0,0,0,0.4)', flexShrink: 0}}>
+    <Foto src={src} t={t} a={a} b={b} pos={pos} />
+  </div>
 );
 
 // ---------- tanda vonis ----------

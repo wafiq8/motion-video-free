@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, interpolate} from 'remotion';
 import {C, FONT} from '../theme';
-import {Appear, Check, Chip, Cross, Foto, FotoKredit, Headline, Pop, prog} from '../components/ui';
+import {Appear, Check, Chip, Cross, Foto, FotoBulat, FotoKredit, Headline, Pop, prog} from '../components/ui';
 import {Amplop, GedungParlemen, Jam, Kalender, Kursi, Pin, Siluet, Surat} from '../components/icons';
 
 type SceneDef = {Comp: React.FC<{t: number}>; sitasi: string};
@@ -82,9 +82,7 @@ const S3: React.FC<{t: number}> = ({t}) => {
       </div>
       {/* Presiden Prabowo datang */}
       <div style={{position: 'absolute', top: 640, right: 70, opacity: prog(t, 10.16), transform: `translateX(${(1 - prog(t, 10.16)) * 60}px)`}}>
-        <div style={{width: 230, height: 280, borderRadius: 20, overflow: 'hidden', border: `4px solid ${C.white}`}}>
-          <Foto src="prabowo.jpg" pos="50% 15%" />
-        </div>
+        <FotoBulat src="prabowo.jpg" size={240} t={t} a={10.16} b={13.62} pos="50% 18%" />
         <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 28, color: C.white, textAlign: 'center', marginTop: 8}}>PRESIDEN</div>
       </div>
       {t >= 10.16 && <FotoKredit bawah text="foto: Kemensetneg (2024) · Wikimedia Commons (domain publik)" />}
@@ -97,7 +95,7 @@ const S4: React.FC<{t: number}> = ({t}) => {
   const move = prog(t, 15.92, 0.9);
   return (
     <AbsoluteFill>
-      <AbsoluteFill style={{opacity: 0.55}}><Foto src="paripurna.jpg" pos="70% 50%" /></AbsoluteFill>
+      <AbsoluteFill style={{opacity: 0.55}}><Foto src="paripurna.jpg" pos="70% 50%" t={t} a={13.62} b={19.42} origin="65% 40%" /></AbsoluteFill>
       <AbsoluteFill style={{background: 'linear-gradient(to bottom, rgba(10,22,48,0.6), rgba(10,22,48,0.2) 40%, rgba(10,22,48,0.7))'}} />
       <FotoKredit text="foto arsip 20/10/2024: Setkab RI · Wikimedia Commons (domain publik)" />
       <div style={{position: 'absolute', top: 410, left: 54}}><Chip text="FOTO ARSIP 2024" color={C.white} style={{fontSize: 22}} /></div>
@@ -119,11 +117,15 @@ const S4: React.FC<{t: number}> = ({t}) => {
       <div style={{position: 'absolute', top: 880, left: 90, opacity: prog(t, 15.6)}}>
         <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 30, color: C.white, background: 'rgba(10,22,48,0.8)', padding: '10px 18px', borderRadius: 12}}>SURAT USULAN</div>
       </div>
-      <div style={{position: 'absolute', top: 1100, left: 0, right: 0, display: 'flex', justifyContent: 'center'}}>
+      {t >= 17.44 && <FotoKredit bawah text="foto Ahmad Muzani: AntaraTV · Wikimedia Commons (CC BY 3.0)" />}
+      <div style={{position: 'absolute', top: 1080, left: 0, right: 0, display: 'flex', justifyContent: 'center'}}>
         <Appear t={t} at={17.44}>
-          <div style={{background: C.white, borderRadius: 20, padding: '18px 32px', textAlign: 'center', fontFamily: FONT, color: C.bg}}>
-            <div style={{fontWeight: 700, fontSize: 30, letterSpacing: '0.1em'}}>DITERIMA KETUA MPR</div>
-            <div style={{fontWeight: 900, fontSize: 56}}>AHMAD MUZANI</div>
+          <div style={{display: 'flex', alignItems: 'center', gap: 26, background: C.white, borderRadius: 120, padding: '14px 40px 14px 14px', fontFamily: FONT, color: C.bg}}>
+            <FotoBulat src="muzani-crop.jpg" size={170} t={t} a={17.44} b={19.42} pos="50% 50%" ring={C.teal} />
+            <div>
+              <div style={{fontWeight: 700, fontSize: 30, letterSpacing: '0.1em'}}>DITERIMA KETUA MPR</div>
+              <div style={{fontWeight: 900, fontSize: 56}}>AHMAD MUZANI</div>
+            </div>
           </div>
         </Appear>
       </div>
@@ -134,10 +136,10 @@ const S4: React.FC<{t: number}> = ({t}) => {
 // ---------- S5 Dua nama ----------
 const KartuCalon: React.FC<{t: number; at: number; no: string; foto: string; pos: string; nama: string[]; jabatan: string[]; jabAt: number; color: string}> = ({t, at, no, foto, pos, nama, jabatan, jabAt, color}) => (
   <Appear t={t} at={at} dy={60}>
-    <div style={{width: 960, height: 400, background: C.card, borderRadius: 28, display: 'flex', overflow: 'hidden', border: `3px solid ${color}`}}>
-      <div style={{width: 320, height: '100%', position: 'relative'}}>
-        <Foto src={foto} pos={pos} />
-        <div style={{position: 'absolute', top: 14, left: 14, width: 70, height: 70, borderRadius: 35, background: color, color: C.white, fontFamily: FONT, fontWeight: 900, fontSize: 44, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{no}</div>
+    <div style={{width: 960, height: 400, background: C.card, borderRadius: 28, display: 'flex', alignItems: 'center', overflow: 'hidden', border: `3px solid ${color}`}}>
+      <div style={{width: 340, height: '100%', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <FotoBulat src={foto} size={300} t={t} a={at} b={29.32} pos={pos} ring={color} />
+        <div style={{position: 'absolute', top: 26, left: 26, width: 70, height: 70, borderRadius: 35, background: color, color: C.white, fontFamily: FONT, fontWeight: 900, fontSize: 44, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{no}</div>
       </div>
       <div style={{flex: 1, padding: '34px 34px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 18}}>
         <Headline lines={nama.map((n) => [{text: n}])} max={58} width={580} align="left" />
@@ -163,6 +165,7 @@ const S5: React.FC<{t: number}> = ({t}) => (
 
 // ---------- S6 Dasco tidak ada ----------
 const S6: React.FC<{t: number}> = ({t}) => (
+  <AbsoluteFill>
   <Col top={420} gap={40}>
     <Appear t={t} at={29.32}>
       <Headline lines={[[{text: 'RAMAI DIGADANG-GADANG'}]]} max={64} weight={800} />
@@ -170,18 +173,23 @@ const S6: React.FC<{t: number}> = ({t}) => (
     <div style={{position: 'relative'}}>
       <Pop t={t} at={29.98}>
         <div style={{width: 640, background: C.card, borderRadius: 28, padding: '40px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, border: `3px solid ${C.line}`}}>
-          <Siluet size={240} />
+          <FotoBulat src="dasco.jpg" size={300} t={t} a={29.98} b={33.0} pos="50% 22%" ring={C.line} />
           <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 96, color: C.white}}>DASCO</div>
         </div>
       </Pop>
-      <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-        <Cross size={420} p={prog(t, 32.28, 0.4)} />
+      {/* stempel vonis di sudut kartu — tidak menutupi wajah */}
+      <div style={{position: 'absolute', right: -60, top: -50, opacity: prog(t, 32.28, 0.15), transform: `rotate(-12deg) scale(${t < 32.28 ? 1.4 : 1.4 - 0.4 * prog(t, 32.28, 0.25)})`}}>
+        <div style={{width: 230, height: 230, borderRadius: '50%', border: `10px solid ${C.accent}`, background: 'rgba(10,22,48,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          <Cross size={150} p={prog(t, 32.28, 0.4)} />
+        </div>
       </div>
     </div>
     <Appear t={t} at={32.28}>
       <Headline lines={[[{text: 'TIDAK ', accent: true}, {text: 'ADA DI SURAT'}]]} max={80} />
     </Appear>
   </Col>
+  {t >= 29.98 && <FotoKredit bawah text="foto: DPR RI (2013) · Wikimedia Commons (domain publik)" />}
+  </AbsoluteFill>
 );
 
 // ---------- S7 Pasal 8 ayat 2 ----------
@@ -228,11 +236,20 @@ const S7: React.FC<{t: number}> = ({t}) => {
 
 // ---------- S8 Mahfud: hari kerja, bukan kalender ----------
 const S8: React.FC<{t: number}> = ({t}) => (
-  <Col top={380} gap={30}>
+  <AbsoluteFill>
+  <Col top={380} gap={26}>
     <Appear t={t} at={46.06}>
       <Headline lines={[[{text: 'JADWAL '}, {text: 'DIGUGAT', accent: true}]]} max={110} />
     </Appear>
-    <Appear t={t} at={47.86}><Chip text="MENURUT MAHFUD MD" color={C.teal} style={{fontSize: 30}} /></Appear>
+    <Appear t={t} at={47.86}>
+      <div style={{display: 'flex', alignItems: 'center', gap: 20}}>
+        <FotoBulat src="mahfud.png" size={130} t={t} a={47.86} b={54.26} pos="50% 25%" ring={C.teal} />
+        <div style={{fontFamily: FONT}}>
+          <Chip text="MENURUT MAHFUD MD" color={C.teal} style={{fontSize: 30}} />
+          <div style={{fontWeight: 700, fontSize: 26, color: C.dim, marginTop: 8}}>Pakar hukum tata negara · parafrase</div>
+        </div>
+      </div>
+    </Appear>
     <Appear t={t} at={50.18}>
       <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 150, color: C.white, lineHeight: 1}}>14 HARI</div>
     </Appear>
@@ -251,6 +268,8 @@ const S8: React.FC<{t: number}> = ({t}) => (
       ))}
     </div>
   </Col>
+  {t >= 47.86 && <FotoKredit bawah text="foto Mahfud MD: Kemenko Polhukam (2022) · Wikimedia Commons (domain publik)" />}
+  </AbsoluteFill>
 );
 
 // ---------- S9 Sidang digeser + counter 14 hari kerja ----------
@@ -302,9 +321,9 @@ const S10: React.FC<{t: number}> = ({t}) => {
             <React.Fragment key={k.nama}>
               {i === 1 && <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 48, color: C.dim}}>ATAU</div>}
               <Appear t={t} at={65.9 + i * 0.25}>
-                <div style={{width: 380, borderRadius: 28, overflow: 'hidden', background: C.card, border: `4px solid ${hi(k.at) ? C.accent : C.line}`}}>
-                  <div style={{height: 420}}><Foto src={k.foto} pos={k.pos} /></div>
-                  <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 56, color: C.white, textAlign: 'center', padding: '14px 0'}}>{k.nama}</div>
+                <div style={{width: 380, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18}}>
+                  <FotoBulat src={k.foto} size={360} t={t} a={65.58} b={75.2} pos={k.pos} ring={hi(k.at) ? C.accent : C.line} />
+                  <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 60, color: hi(k.at) ? C.accent : C.white, textAlign: 'center'}}>{k.nama}</div>
                 </div>
               </Appear>
             </React.Fragment>

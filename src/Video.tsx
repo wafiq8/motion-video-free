@@ -45,6 +45,37 @@ function buildPages(ws: Word[]): Page[] {
   return pages;
 }
 
+
+// Latar bergerak halus (v3.3): drift gradasi + grid samar bergeser + partikel debu cahaya. Deterministik.
+const DUST = (() => {
+  let seed = 20261123;
+  const r = () => ((seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296);
+  return Array.from({length: 38}, () => ({x: r() * 1080, y: r() * 1920, s: 2 + r() * 4, v: 8 + r() * 18, ph: r() * 6.28, o: 0.08 + r() * 0.18}));
+})();
+const Latar: React.FC<{t: number}> = ({t}) => {
+  const gx = 50 + 14 * Math.sin(t * 0.21);
+  const gy = 42 + 10 * Math.cos(t * 0.17);
+  const off = (t * 14) % 120;
+  return (
+    <AbsoluteFill>
+      <AbsoluteFill style={{background: `radial-gradient(ellipse at ${gx}% ${gy}%, ${C.bg2} 0%, ${C.bg} 68%)`}} />
+      <AbsoluteFill style={{opacity: 0.22}}>
+        <svg width="1080" height="1920">
+          {Array.from({length: 18}).map((_, i) => <line key={'h' + i} x1="0" x2="1080" y1={i * 120 + off} y2={i * 120 + off} stroke={C.line} strokeWidth="1.5" />)}
+          {Array.from({length: 11}).map((_, i) => <line key={'v' + i} y1="0" y2="1920" x1={i * 120 + off * 0.5} x2={i * 120 + off * 0.5} stroke={C.line} strokeWidth="1.5" />)}
+        </svg>
+      </AbsoluteFill>
+      <AbsoluteFill>
+        {DUST.map((d, i) => {
+          const y = (((d.y - t * d.v) % 1920) + 1920) % 1920;
+          const x = d.x + 18 * Math.sin(t * 0.4 + d.ph);
+          return <div key={i} style={{position: 'absolute', left: x, top: y, width: d.s, height: d.s, borderRadius: '50%', background: '#BFD3FF', opacity: d.o * (0.6 + 0.4 * Math.sin(t * 0.8 + d.ph))}} />;
+        })}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
 const Caption: React.FC<{t: number; pages: Page[]}> = ({t, pages}) => {
   const page = pages.find((p) => t >= p.start && t < p.end);
   if (!page) return null;
@@ -96,7 +127,7 @@ export const Video: React.FC = () => {
 
   return (
     <AbsoluteFill style={{background: C.bg, fontFamily: FONT}}>
-      <AbsoluteFill style={{background: `radial-gradient(ellipse at 50% 45%, ${C.bg2} 0%, ${C.bg} 70%)`}} />
+      <Latar t={t} />
       <Scene.Comp t={t} />
       {/* scrim bawah untuk caption & sitasi */}
       <AbsoluteFill style={{background: 'linear-gradient(to bottom, rgba(10,22,48,0) 68%, rgba(10,22,48,0.85) 76%, rgba(10,22,48,0.85) 100%)'}} />
