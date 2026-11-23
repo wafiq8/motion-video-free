@@ -17,6 +17,9 @@ Amendemen v3.4 (23 Nov 2026, review user produksi pertama): foto
 peristiwa AKTUAL wajib dicari lewat liputan berita, lalu dilacak
 ke sumber aslinya (hierarki sumber foto); foto tokoh wajib versi
 TERBARU (potret resmi masa jabatan berjalan).
+Amendemen v3.5 (23 Nov 2026, review user): aturan watermark foto
+berita — foto ber-watermark tampil UTUH sebagai KartuFoto, tidak
+pernah dipotong; kredit "HO" dikenali sebagai rilis lembaga.
 
 ## Pengecualian terkunci (HANYA berlaku di Mode D)
 
@@ -139,8 +142,43 @@ foto, lalu foto dilacak ke sumber ASLINYA. Pakai urutan ini:
    berisi teks/desain media lain, dan dilarang screenshot siaran
    TV. Risiko klaim hak cipta/takedown ditanggung operator —
    sesi wajib menyebutkannya saat mengusulkan foto kategori ini.
+   Kredit kantor berita berpola "<MEDIA>/HO-<LEMBAGA>" (mis.
+   "ANTARA/HO-DPR RI") berarti foto HANDOUT dari lembaga itu —
+   perlakukan sebagai kategori 1 bila lembaganya instansi negara,
+   kredit ditulis persis seperti di sumber ("foto: ANTARA/HO-DPR
+   RI (<tanggal>)"). Kartu media yang mencantumkan sumber resmi
+   (mis. "YouTube Sekretariat Presiden") wajib dicoba dilacak ke
+   sumber resminya dulu sebelum jatuh ke kategori 3.
 4. **Cadangan** — foto arsip acara lain (berlabel FOTO ARSIP)
    atau ilustrasi vektor; dinyatakan di laporan.
+
+### Watermark foto berita (amendemen v3.5)
+
+Foto dari media/kantor berita sering membawa watermark (logo di
+sudut, banner nama media di bawah). Aturannya:
+
+- **Watermark TIDAK BOLEH dipotong, ditutup, diburamkan, di-crop,
+  atau dihapus** — termasuk tidak boleh "terpotong tidak sengaja"
+  oleh object-fit cover, crop lingkaran, atau zoom Ken Burns.
+- Foto ber-watermark tampil sebagai **KartuFoto**: kartu
+  berbingkai putih tipis, gambar `object-fit: contain` (seluruh
+  bidang foto terlihat, termasuk watermark), lebar ±960 px,
+  proporsi asli foto. DILARANG dijadikan FotoBeat full-bleed,
+  foto lingkaran tokoh, atau latar blur — semua itu memotong tepi.
+- Ken Burns untuk KartuFoto dilakukan pada **skala kartu**
+  (mis. 1,00 → 1,05 sepanjang beat), BUKAN zoom di dalam bingkai,
+  sehingga watermark tetap utuh di setiap frame.
+- Elemen lain (kartu jam, label, kartu tokoh, pill, sitasi) tidak
+  boleh menimpa area watermark; atur tata letak di sekitarnya.
+- Kredit foto tetap wajib tampil (kanan atas) walau watermark
+  sudah menyebut medianya — watermark bukan pengganti kredit.
+- Pakai file dengan resolusi terbaik yang disajikan halaman
+  artikel (og:image / gambar utama); jangan memakai versi
+  thumbnail kartu berita yang sudah ditambahi judul/desain.
+- Foto TANPA watermark (rilis resmi, Commons) tetap boleh
+  full-bleed / lingkaran / blur seperti biasa.
+- Laporan akhir mencatat per foto: ada/tidaknya watermark dan
+  konfirmasi bahwa watermark utuh di semua frame.
 
 Unduh file ke `public/foto/` (vendor, tanpa hotlink), catat per
 foto: URL sumber asli, pembuat/lembaga, tanggal, status lisensi,
@@ -178,6 +216,8 @@ dibutuhkan.
    atasnya (kartu waktu "±23.00 WIB" + ikon jam, atau kalimat
    dampak). Untuk beat fakta/emosional, maksimal ±1/3 video.
    Foto tampil dengan zoom Ken Burns lambat — tidak pernah diam.
+   Foto ber-watermark TIDAK boleh full-bleed: pakai KartuFoto
+   (lihat "Watermark foto berita").
 3. **PetaLokator** — peta ilustrasi sederhana: wilayah aksen
    ber-outline + pin + kartu label nama tempat; label "peta
    ilustrasi, tidak berskala" wajib.
@@ -282,5 +322,8 @@ relevan), dan 7 tidak boleh hilang.
   dinyatakan di laporan beserta kategorinya.
 - Tidak ada scene yang seluruh elemennya diam: gerak latar halus
   berjalan dan foto selalu ber-Ken Burns.
+- Watermark foto berita utuh di setiap frame (tidak terpotong
+  oleh crop, lingkaran, blur, zoom, atau elemen lain); foto
+  ber-watermark hanya tampil sebagai KartuFoto; kredit tetap ada.
 - Lapisan SFX hadir mengikuti peta bunyi baku dan tidak menutupi
   narasi (loudness akhir tetap lolos gerbang inti).
