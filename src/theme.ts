@@ -14,4 +14,4 @@ export const W = 1080;
 export const H = 1920;
 export const SAFE_X = 54; // 5%
 export const MAX_TEXT_W = 972; // 90%
-export const TOPIC = 'PENGGANTI WAPRES';
+export const TOPIC = 'KASUS DUGAAN MAKAR';
