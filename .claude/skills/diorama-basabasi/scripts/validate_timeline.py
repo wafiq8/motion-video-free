@@ -9,7 +9,7 @@ import sys
 
 TOL = 0.3          # toleransi batas scene vs awal kalimat (detik)
 DUR_MIN, DUR_MAX = 30.0, 60.0
-DUR_MAX_A2 = 120.0  # Varian A2 (format peta): rentang 30–120 detik
+DUR_MAX_A2 = 120.0  # Varian A2 (format peta) & Mode D BERITA: rentang 30–120 detik
 TAIL_MAX = 5.0     # total non-narasi maksimum di luar jeda payoff
 
 fails = []
@@ -29,9 +29,11 @@ def main(path):
     total = float(t["total_duration_s"])
     audio = float(t["audio_duration_s"])
     variant = str(t.get("variant", "")).strip().upper()
-    dur_max = DUR_MAX_A2 if variant == "A2" else DUR_MAX
+    long_fmt = variant in ("A2", "BERITA")
+    dur_max = DUR_MAX_A2 if long_fmt else DUR_MAX
+    fmt_label = " (Varian A2)" if variant == "A2" else (" (Mode D BERITA)" if variant == "BERITA" else "")
     check(DUR_MIN <= total <= dur_max,
-          f"total durasi 30–{int(dur_max)} detik" + (" (Varian A2)" if variant == "A2" else ""),
+          f"total durasi 30–{int(dur_max)} detik" + fmt_label,
           f"{total:.2f}s")
     check(abs(audio - total) <= TAIL_MAX + 1.0, "durasi audio masuk akal vs total",
           f"audio={audio:.2f}s total={total:.2f}s")

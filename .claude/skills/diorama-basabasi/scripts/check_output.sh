@@ -10,7 +10,7 @@ DMAX="${3:-}"
 if [ -z "$DMAX" ]; then
   DMAX=60
   TL="$(dirname "$F")/../docs/timeline.json"
-  if [ -f "$TL" ] && grep -q '"variant"[[:space:]]*:[[:space:]]*"A2"' "$TL"; then DMAX=120; fi
+  if [ -f "$TL" ] && grep -qE '"variant"[[:space:]]*:[[:space:]]*"(A2|BERITA)"' "$TL"; then DMAX=120; fi
 fi
 fail=0
 say() { echo "$1 $2"; [ "$1" = "FAIL" ] && fail=1; return 0; }

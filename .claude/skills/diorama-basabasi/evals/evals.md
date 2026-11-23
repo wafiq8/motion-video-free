@@ -7,7 +7,7 @@ sama, lalu nilai hasil render finalnya dengan asersi di bawah. Skill
 lolos bila versi dengan-skill PASS semua asersi kritis (bertanda *)
 dan baseline terdokumentasi perbedaannya.
 
-## Lima skenario wajib
+## Enam skenario wajib
 
 1. **Topik aliran/sistem** (mis. perjalanan satu paket udara/darah/air
    melewati sebuah sistem) — menguji struktur ikuti-satu-aliran dan
@@ -26,10 +26,16 @@ dan baseline terdokumentasi perbedaannya.
    dwibahasa sesuai urutan narasi, belahan berjalan dengan readout
    proses, makro mekanisme, payoff label prinsip, dan ketiadaan HUD
    permanen.
+6. **Topik berita Mode D** (mis. satu peristiwa aktual bersumber
+   jelas, atau satu fakta aturan/hukum) — menguji hook dua langkah,
+   pill label topik yang konsisten, sitasi di setiap scene, karaoke
+   satu kata sinkron, counter ikon, kartu kutipan asli, label
+   BELUM TERBUKTI + versi resmi untuk dugaan, dan penutup verdict +
+   pertanyaan terbuka. Durasi 30–120 detik (`"variant": "BERITA"`).
 
 ## Asersi lulus/gagal (ukur dari file final + timeline.json)
 
-- * File final: 1080×1920, 30 fps, durasi masuk rentang format (30–60; A2: 30–120) (ffprobe).
+- * File final: 1080×1920, 30 fps, durasi masuk rentang format (30–60; A2 & Mode D: 30–120) (ffprobe).
 - * `validate_timeline.py` PASS; semua batas scene ≤ 0,3 detik dari
   awal kalimat pemetaannya.
 - * Tidak ada teks terpotong atau keluar zona aman pada contact sheet
@@ -55,8 +61,17 @@ dan baseline terdokumentasi perbedaannya.
   mana pun; * tampak ledakan tanpa bagian saling menembus; *
   partikel aliran konsisten kode warnanya; * label prinsip tampil
   tepat pada kalimat penutup.
+- Khusus Mode D (skenario 6): asersi "nol gambar 2D sebagai scene"
+  DIGANTI — ilustrasi vektor 2D dari kode adalah sistem visualnya
+  (gambar/foto generate AI tetap * nol); * pill label topik identik
+  di semua still dan tidak ada pill tahap lain; * setiap scene
+  grafis membawa baris sitasi, foto membawa kredit, peta membawa
+  label tidak-berskala; * kata karaoke yang ter-highlight adalah
+  kata yang sedang diucapkan (≤ 0,3 detik); * kutipan di KartuKutipan
+  dapat ditelusur ke sumbernya (tidak dikarang); * penutup memuat
+  verdict + pertanyaan terbuka spesifik, bukan kesimpulan netral.
 - Penutup memuat kesimpulan (Mode A) / kesimpulan-prinsip (Mode B) /
-  callback (Mode C); tanpa
+  callback (Mode C) / verdict + pertanyaan terbuka (Mode D); tanpa
   kartu/label seri; fade ke hitam bersih
   (CTV hanya bila diminta untuk video itu).
 - Waktu produksi tercatat (untuk target ritme 1–2 video/hari): render

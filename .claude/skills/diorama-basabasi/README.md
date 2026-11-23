@@ -1,21 +1,22 @@
-# diorama-basabasi — Tool Produksi Video Edukasi Basabasi (Mode A + B + C)
+# diorama-basabasi — Tool Produksi Video Edukasi Basabasi (Mode A + B + C + D)
 
-Skill Claude Code untuk membuat video edukasi vertikal 9:16 (30–60 detik; A2: 30–120 detik)
-bergaya 3D dari kode (Remotion + Three.js; prosedural secara bawaan, format peta memakai data asli & model berlisensi terbuka), pola Motion Format versi
-Basabasi, dalam tiga mode aktif: Mode A — diorama 3D semi-realistis
+Skill Claude Code untuk membuat video edukasi vertikal 9:16 (30–60 detik; A2 & Mode D: 30–120 detik)
+bergaya 3D dari kode (Remotion + Three.js; prosedural secara bawaan, format peta memakai data asli & model berlisensi terbuka; Mode D: flat 2D dari kode), pola Motion Format versi
+Basabasi (Mode D dari bedah pola @petsreid_), dalam empat mode aktif: Mode A — diorama 3D semi-realistis
 (lanskap/sejarah + varian peta hidup); Mode B — bongkar benda
 (cara kerja benda/mesin); Mode C — ilustrasi anatomi 3D
-glossy (Seri Tubuh Manusia). Tujuannya membangun audiens. Dirancang agar render final pertama
+glossy (Seri Tubuh Manusia); Mode D — explainer berita flat
+motion-graphics 2D (peristiwa aktual/fakta publik). Tujuannya membangun audiens. Dirancang agar render final pertama
 langsung lolos QC: timing diukur dari audio asli ke dalam satu
 timeline.json yang divalidasi mesin, teks readout tidak bisa keluar
 frame, ada gerbang still-frame yang murah, dan sesi wajib QC mandiri
 fail-closed sebelum menyerahkan hasil.
 
-## Keputusan terkunci (user, 12 Nov 2026; daftar mode diperbarui 13 Nov 2026)
+## Keputusan terkunci (user, 12 Nov 2026; daftar mode diperbarui 13 Nov 2026; Mode D ditambahkan 23 Nov 2026)
 
-Mode A + B + C aktif · tujuan bangun audiens (penutup kesimpulan/callback, tanpa kartu seri & tanpa pill tahap;
+Mode A + B + C + D aktif · tujuan bangun audiens (penutup kesimpulan/callback; Mode D: verdict + pertanyaan terbuka; tanpa kartu seri & tanpa pill tahap, kecuali pill label topik Mode D;
 CTV hanya sesekali bila diminta) · angka = readout layar (hybrid: maks.
-satu angka hero 3D emas per video) · durasi 30–60 detik (A2: 30–120) · suara agnostik (MP3 dari user) ·
+satu angka hero 3D emas per video; Mode D: tanpa angka hero 3D) · durasi 30–60 detik (A2 & Mode D: 30–120) · suara agnostik (MP3 dari user) ·
 musik dari user · fakta: sumber user utama, riset web boleh melengkapi
 + wajib cantumkan sumber · operator tunggal ·
 target 1–2 video/hari · render cepat per-scene + concat (pola optimasi
@@ -24,7 +25,7 @@ Puppeteer/FFmpeg).
 ## Isi paket
 
 - `SKILL.md` — inti (294 baris): keputusan terkunci, larangan keras,
-  aturan timing/timeline.json, style lock ringkas tiga mode, aturan teks, audio,
+  aturan timing/timeline.json, style lock ringkas empat mode, aturan teks, audio,
   alur 5 tahap dengan 2 gerbang, pipeline render cepat, QC 10 poin.
 - `references/mode-a.md` — detail Mode A: gaya visual + palet + rig
   cahaya, tipografi serif, bahasa kamera & tangga zoom, tiga struktur
@@ -37,13 +38,18 @@ Puppeteer/FFmpeg).
   di void ungu, kode warna aliran mutlak, struktur ikuti-satu-aliran,
   hook waktu-nyata + counter hidup, judul tunda, chip
   menyala, penutup callback, QC khusus Mode C.
+- `references/mode-berita.md` — detail Mode D (berita): flat
+  motion-graphics 2D template newsroom, pengecualian terkunci dari
+  larangan 3D inti, tujuh tipe scene baku (KartuHook s.d.
+  PenutupDampak), karaoke satu kata, sitasi wajib per scene, QC
+  khusus Mode D.
 - `templates/tabel-kalimat.md` — format baku tabel kalimat & pemetaan.
 - `scripts/validate_timeline.py` — validator fail-closed untuk
   timeline.json (sudah diuji: PASS pada contoh valid).
 - `scripts/check_output.sh` — pemeriksa file final via ffprobe/ffmpeg:
-  resolusi, fps, durasi (30–60; A2: 30–120), keheningan, loudness (sudah diuji).
-- `evals/evals.md` — 5 skenario uji (aliran, peta, bantahan mitos,
-  anatomi Mode C, bongkar benda Mode B) +
+  resolusi, fps, durasi (30–60; A2 & BERITA: 30–120), keheningan, loudness (sudah diuji).
+- `evals/evals.md` — 6 skenario uji (aliran, peta, bantahan mitos,
+  anatomi Mode C, bongkar benda Mode B, berita Mode D) +
   asersi lulus/gagal terukur; jalankan sebelum skill disebut selesai.
 - `prompt-mulai-sesi-baru.txt` — prompt pendek yang ditempel user sebagai
   pesan pertama setiap produksi baru di sesi Claude Code cloud.
