@@ -1,0 +1,209 @@
+{
+  "fps": 30,
+  "variant": "BERITA",
+  "mode": "D",
+  "audio_duration_s": 74.76,
+  "total_duration_s": 75.2,
+  "sentences": [
+    {
+      "id": 1,
+      "text": "Kursi wakil presiden kosong sejak 12 November.",
+      "start_s": 0.0,
+      "end_s": 2.62,
+      "scene": 1
+    },
+    {
+      "id": 2,
+      "text": "Hari ini, amplop putih itu akhirnya dibuka.",
+      "start_s": 2.9,
+      "end_s": 6.22,
+      "scene": 2
+    },
+    {
+      "id": 3,
+      "text": "Senin sore, 23 November 2026, Presiden Prabowo datang langsung ke Gedung MPR, Senayan.",
+      "start_s": 6.46,
+      "end_s": 13.42,
+      "scene": 3
+    },
+    {
+      "id": 4,
+      "text": "Pukul 16.48, ia menyerahkan surat usulan kepada Ketua MPR Ahmad Muzani.",
+      "start_s": 13.62,
+      "end_s": 19.24,
+      "scene": 4
+    },
+    {
+      "id": 5,
+      "text": "Isinya dua nama.",
+      "start_s": 19.42,
+      "end_s": 20.94,
+      "scene": 5
+    },
+    {
+      "id": 6,
+      "text": "Satu: Andi Amran Sulaiman, Menteri Pertanian.",
+      "start_s": 21.04,
+      "end_s": 24.36,
+      "scene": 5
+    },
+    {
+      "id": 7,
+      "text": "Dua: Sugiono, Menteri Koordinator PMK, sekaligus Sekjen Gerindra.",
+      "start_s": 24.5,
+      "end_s": 29.32,
+      "scene": 5
+    },
+    {
+      "id": 8,
+      "text": "Nama Dasco yang ramai digadang-gadang justru tidak ada.",
+      "start_s": 29.32,
+      "end_s": 32.82,
+      "scene": 6
+    },
+    {
+      "id": 9,
+      "text": "Kenapa harus dua nama?",
+      "start_s": 33.0,
+      "end_s": 34.28,
+      "scene": 7
+    },
+    {
+      "id": 10,
+      "text": "Pasal 8 ayat 2 UUD 1945 mengatur: jika kursi wapres kosong, presiden mengusulkan dua calon, dan MPR memilih satu di sidang paripurna.",
+      "start_s": 34.38,
+      "end_s": 45.74,
+      "scene": 7
+    },
+    {
+      "id": 11,
+      "text": "Jadwalnya sempat digugat.",
+      "start_s": 46.06,
+      "end_s": 47.7,
+      "scene": 8
+    },
+    {
+      "id": 12,
+      "text": "Mahfud MD mengingatkan, hitungan 14 hari sebelum sidang adalah hari kerja — bukan hari kalender.",
+      "start_s": 47.86,
+      "end_s": 54.1,
+      "scene": 8
+    },
+    {
+      "id": 13,
+      "text": "MPR mendengar.",
+      "start_s": 54.26,
+      "end_s": 55.56,
+      "scene": 9
+    },
+    {
+      "id": 14,
+      "text": "Sidang digeser dari 9 Desember menjadi Jumat, 11 Desember 2026, setelah tim verifikasi memeriksa berkas kedua calon selama 14 hari kerja.",
+      "start_s": 55.64,
+      "end_s": 65.5,
+      "scene": 9
+    },
+    {
+      "id": 15,
+      "text": "Satu dari dua nama ini akan mendampingi Prabowo sampai 2029.",
+      "start_s": 65.58,
+      "end_s": 70.02,
+      "scene": 10
+    },
+    {
+      "id": 16,
+      "text": "Menurutmu, siapa yang lebih pantas: Amran, atau Sugiono?",
+      "start_s": 70.62,
+      "end_s": 74.32,
+      "scene": 10
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "sentence_ids": [
+        1
+      ],
+      "start_s": 0.0,
+      "end_s": 2.9
+    },
+    {
+      "id": 2,
+      "sentence_ids": [
+        2
+      ],
+      "start_s": 2.9,
+      "end_s": 6.46
+    },
+    {
+      "id": 3,
+      "sentence_ids": [
+        3
+      ],
+      "start_s": 6.46,
+      "end_s": 13.62
+    },
+    {
+      "id": 4,
+      "sentence_ids": [
+        4
+      ],
+      "start_s": 13.62,
+      "end_s": 19.42
+    },
+    {
+      "id": 5,
+      "sentence_ids": [
+        5,
+        6,
+        7
+      ],
+      "start_s": 19.42,
+      "end_s": 29.32
+    },
+    {
+      "id": 6,
+      "sentence_ids": [
+        8
+      ],
+      "start_s": 29.32,
+      "end_s": 33.0
+    },
+    {
+      "id": 7,
+      "sentence_ids": [
+        9,
+        10
+      ],
+      "start_s": 33.0,
+      "end_s": 46.06
+    },
+    {
+      "id": 8,
+      "sentence_ids": [
+        11,
+        12
+      ],
+      "start_s": 46.06,
+      "end_s": 54.26
+    },
+    {
+      "id": 9,
+      "sentence_ids": [
+        13,
+        14
+      ],
+      "start_s": 54.26,
+      "end_s": 65.58
+    },
+    {
+      "id": 10,
+      "sentence_ids": [
+        15,
+        16
+      ],
+      "start_s": 65.58,
+      "end_s": 75.2
+    }
+  ]
+}
