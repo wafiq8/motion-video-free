@@ -1,6 +1,6 @@
 # Laporan Produksi — "Mantan Kapolri Tersangka Makar" (Mode D, BERITA, skill v3.5)
 
-File final: `out/mantan-kapolri-makar-final.mp4` (1080×1920, 30 fps, 77,47 detik)
+File final: `hasil/mantan-kapolri-makar-final.mp4` (1080×1920, 30 fps, 77,47 detik, 25,1 MB)
 Preview: `out/mantan-kapolri-makar-preview.mp4` (skala 0,5) · Contact sheet: `out/contact-sheet.jpg`
 Pill topik: **KASUS DUGAAN MAKAR** · Narasi: `mantan-kapolri.mp3` dari operator (77,01 dtk) · Musik: `Backsound-news.mp3` dari operator
 
@@ -25,17 +25,18 @@ ASR salah dengar "Barreskrim/Listio/Kabarreskrim" dan menyisipkan token "70%." s
 
 - `validate_timeline.py`: **PASS SEMUA** (total 77,48 dtk, variant BERITA, semua batas scene = awal kalimat, ekor 0,90 dtk).
 - `check_output.sh` (preview): semua PASS kecuali resolusi 540×960. Itu memang skala preview.
-- `check_output.sh` (final): lihat bagian QC poin 1.
+- `check_output.sh out/mantan-kapolri-makar-final.mp4`: **PASS SEMUA**. Hasilnya 1080×1920, 30 fps, 77,47 dtk, tanpa keheningan > 1,2 dtk, loudness −14,1 LUFS. Parameter codec 9 file scene identik, jadi concat `-c copy` bersih.
+- Waktu render: preview skala 0,5 selama 44 dtk, final full-res selama 107 dtk (4 core).
 
 ## QC 10 poin
 
-1. Timeline & spesifikasi file: lihat hasil check_output final.
+1. Timeline & spesifikasi file: PASS (lihat atas). Audio berjalan sampai 76,6 dtk, disusul jeda payoff 0,9 dtk dan fade.
 2. Batas scene ≤ 0,3 dtk: PASS (batas scene = awal kalimat; render per scene memakai frame dari timeline).
 3. Teks tidak terpotong / zona aman: PASS di contact sheet 27 still. Headline diukur `fitText`, caption ≤ 940 px (build gagal bila lebih), pill y 262, caption y 1470.
 4. Hook ≤ 1,5 dtk: PASS. Chip "MANTAN KAPOLRI", lencana, dan "TERSANGKA MAKAR" tampil di 0,0–0,4 dtk bersama suara.
 5. Counter sinkron: PASS. "6" tampil di 8,3 dtk (kata "6" di 8,44); 71 saksi menghitung 54,66→55,72; Rp735 juta menghitung 58,0→58,9 (kata "735" di 58,16); 20 tahun di 52,1→52,9.
 6. Keheningan: PASS (tidak ada > 1,2 dtk).
-7. Loudness: master audio −14,0 LUFS, peak −1,5 dBFS; preview −14,1 LUFS.
+7. Loudness: PASS. File final −14,0 LUFS (ebur128), peak −1,3 dBFS.
 8. Konsistensi gaya: PASS (palet berita-navy, Inter 500–900, karaoke satu kata kotak oranye di semua scene).
 9. Cek khusus Mode D:
    - Pill topik identik di semua scene.
