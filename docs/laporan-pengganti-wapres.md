@@ -51,7 +51,7 @@ Timing: Whisper large-v3 (`language="id"` dipaksa), teks dari naskah. Catatan: n
 | 6 | CNN Indonesia, Kompas | Dasco (DPR RI, potret resmi 2024–2029, PD-IDGov) |
 | 7 | UUD 1945 Pasal 8 ayat 2 | ikon siluet generik "2 calon" (bukan tokoh bernama) |
 | 8 | CNN Indonesia, detik | Mahfud MD (Kemenko Polhukam 2022, PD-IDGov) · label parafrase |
-| 9 | NU Online, Kompas | — |
+| 9 | NU Online, Kompas | Latar: konferensi pers Ketua MPR soal jadwal 11 Des (MPR RI, 23/11/2026, domain publik — kategori 1) |
 | 10 | CNN Indonesia · Kompas · ANTARA · NU Online · detik | Amran, Sugiono (kredit seperti S5) |
 
 ## Aset
@@ -65,6 +65,7 @@ Timing: Whisper large-v3 (`language="id"` dipaksa), teks dari naskah. Catatan: n
 | dasco-2024.jpg | "Sufmi Dasco Ahmad, Wakil Ketua DPR-RI (2024–2029).jpg" — DPR RI | PD-IDGov | 23/11/2026 | 960×960 |
 | mahfud.png | "Mahfud MD, Menkopolhukam (2022).png" — Kemenko Polhukam | PD-IDGov | 23/11/2026 | 172×229 |
 | muzani-2024.jpg | "Ahmad Muzani, Gerindra candidate for Lampung I in 2024.jpg" — KPU RI | PD-IDGov | 23/11/2026 | 960×1440 |
+| mpr-konpers-20261123.png | mpr.go.id/berita/ahmad-muzani-perubahan-sidang-paripurna-11-desember — MPR RI | domain publik (UU 28/2014 Ps. 43b) | 23/11/2026 | 750×482 |
 | SFX (whoosh, pop, tear, shutter, stamp, ding) | disintesis sendiri (`tools/sfx.py`, seed tetap) | milik sendiri | — | 240 KB |
 | Font Inter 500–900 | @fontsource/inter | SIL OFL | — | ~ 100 KB |
 
@@ -91,3 +92,5 @@ Tidak ada (produksi Mode D pertama — Gerbang 1 & 2 format penuh, 3 still/scene
 >
 > Basabasi Berita
 > #wakilpresiden #MPR #Prabowo #AmranSulaiman #Sugiono #UUD1945 #beritaterkini #basabasi
+
+Revisi 2 (v3.4, hierarki sumber foto): scene 9 memakai foto resmi MPR RI hari ini (konferensi pers jadwal 11 Des). Foto penyerahan surat (scene 4) belum dirilis sumber resmi saat produksi — Setkab/MPR belum memuat, presidenri.go.id & dpr.go.id menolak akses otomatis (403) — sehingga scene 4 tetap foto arsip 2024 berlabel FOTO ARSIP (kategori 4).

@@ -276,7 +276,11 @@ const S8: React.FC<{t: number}> = ({t}) => (
 const S9: React.FC<{t: number}> = ({t}) => {
   const n = Math.round(interpolate(t, [61.54, 64.66], [0, 14], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}));
   return (
-    <Col top={380} gap={30}>
+    <AbsoluteFill>
+    <AbsoluteFill style={{opacity: 0.4 * prog(t, 54.26, 0.4)}}><Foto src="mpr-konpers-20261123.png" pos="45% 40%" t={t} a={54.26} b={65.58} origin="40% 35%" style={{filter: 'blur(1.5px)'}} /></AbsoluteFill>
+    <AbsoluteFill style={{background: 'linear-gradient(to bottom, rgba(10,22,48,0.55), rgba(10,22,48,0.35) 40%, rgba(10,22,48,0.8))'}} />
+    <FotoKredit text="foto: MPR RI, konferensi pers 23/11/2026 (domain publik)" />
+    <Col top={410} gap={30}>
       <Appear t={t} at={54.26}>
         <Headline lines={[[{text: 'MPR '}, {text: 'MENDENGAR', accent: 'teal'}]]} max={100} />
       </Appear>
@@ -300,6 +304,7 @@ const S9: React.FC<{t: number}> = ({t}) => {
         </div>
       </Appear>
     </Col>
+    </AbsoluteFill>
   );
 };
 
