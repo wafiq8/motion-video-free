@@ -1,890 +1,908 @@
 [
  {
-  "text": "Kursi",
+  "text": "Seorang",
   "start_s": 0.0,
-  "end_s": 0.28,
+  "end_s": 0.38,
   "sentence": 1
  },
  {
-  "text": "wakil",
-  "start_s": 0.28,
-  "end_s": 0.56,
+  "text": "mantan",
+  "start_s": 0.38,
+  "end_s": 0.8,
+  "sentence": 1
+ },
+ {
+  "text": "Kapolri",
+  "start_s": 0.8,
+  "end_s": 1.42,
+  "sentence": 1
+ },
+ {
+  "text": "kini",
+  "start_s": 1.42,
+  "end_s": 2.22,
+  "sentence": 1
+ },
+ {
+  "text": "jadi",
+  "start_s": 2.22,
+  "end_s": 2.4,
+  "sentence": 1
+ },
+ {
+  "text": "tersangka",
+  "start_s": 2.4,
+  "end_s": 2.96,
+  "sentence": 1
+ },
+ {
+  "text": "makar",
+  "start_s": 2.96,
+  "end_s": 3.5,
+  "sentence": 1
+ },
+ {
+  "text": "terhadap",
+  "start_s": 3.5,
+  "end_s": 3.9,
   "sentence": 1
  },
  {
   "text": "presiden",
-  "start_s": 0.56,
-  "end_s": 0.98,
+  "start_s": 3.9,
+  "end_s": 4.32,
   "sentence": 1
  },
  {
-  "text": "kosong",
-  "start_s": 0.98,
-  "end_s": 1.64,
+  "text": "yang",
+  "start_s": 4.32,
+  "end_s": 4.52,
   "sentence": 1
  },
  {
-  "text": "sejak",
-  "start_s": 1.64,
-  "end_s": 1.94,
+  "text": "pernah",
+  "start_s": 4.52,
+  "end_s": 4.86,
   "sentence": 1
  },
  {
-  "text": "12",
-  "start_s": 1.94,
-  "end_s": 2.14,
+  "text": "ia",
+  "start_s": 4.86,
+  "end_s": 5.24,
   "sentence": 1
  },
  {
-  "text": "November.",
-  "start_s": 2.14,
-  "end_s": 2.62,
+  "text": "layani.",
+  "start_s": 5.24,
+  "end_s": 5.66,
   "sentence": 1
- },
- {
-  "text": "Hari",
-  "start_s": 2.9,
-  "end_s": 3.48,
-  "sentence": 2
- },
- {
-  "text": "ini,",
-  "start_s": 3.48,
-  "end_s": 3.82,
-  "sentence": 2
- },
- {
-  "text": "amplop",
-  "start_s": 3.94,
-  "end_s": 4.54,
-  "sentence": 2
- },
- {
-  "text": "putih",
-  "start_s": 4.54,
-  "end_s": 4.88,
-  "sentence": 2
- },
- {
-  "text": "itu",
-  "start_s": 4.88,
-  "end_s": 5.08,
-  "sentence": 2
- },
- {
-  "text": "akhirnya",
-  "start_s": 5.08,
-  "end_s": 5.84,
-  "sentence": 2
- },
- {
-  "text": "dibuka.",
-  "start_s": 5.84,
-  "end_s": 6.22,
-  "sentence": 2
  },
  {
   "text": "Senin",
-  "start_s": 6.46,
-  "end_s": 7.02,
+  "start_s": 5.94,
+  "end_s": 6.4,
+  "sentence": 2
+ },
+ {
+  "text": "malam,",
+  "start_s": 6.4,
+  "end_s": 6.92,
+  "sentence": 2
+ },
+ {
+  "text": "Bareskrim",
+  "start_s": 6.94,
+  "end_s": 7.48,
+  "sentence": 2
+ },
+ {
+  "text": "Polri",
+  "start_s": 7.48,
+  "end_s": 7.86,
+  "sentence": 2
+ },
+ {
+  "text": "menetapkan",
+  "start_s": 7.86,
+  "end_s": 8.44,
+  "sentence": 2
+ },
+ {
+  "text": "6",
+  "start_s": 8.44,
+  "end_s": 8.78,
+  "sentence": 2
+ },
+ {
+  "text": "tersangka,",
+  "start_s": 8.78,
+  "end_s": 9.42,
+  "sentence": 2
+ },
+ {
+  "text": "Jenderal",
+  "start_s": 9.52,
+  "end_s": 10.2,
+  "sentence": 2
+ },
+ {
+  "text": "Purnawirawan",
+  "start_s": 10.2,
+  "end_s": 10.82,
+  "sentence": 2
+ },
+ {
+  "text": "Listyo",
+  "start_s": 10.82,
+  "end_s": 11.28,
+  "sentence": 2
+ },
+ {
+  "text": "Sigit",
+  "start_s": 11.28,
+  "end_s": 11.64,
+  "sentence": 2
+ },
+ {
+  "text": "Prabowo",
+  "start_s": 11.64,
+  "end_s": 12.0,
+  "sentence": 2
+ },
+ {
+  "text": "dan",
+  "start_s": 12.0,
+  "end_s": 12.46,
+  "sentence": 2
+ },
+ {
+  "text": "5",
+  "start_s": 12.46,
+  "end_s": 12.92,
+  "sentence": 2
+ },
+ {
+  "text": "perwira",
+  "start_s": 12.92,
+  "end_s": 13.32,
+  "sentence": 2
+ },
+ {
+  "text": "aktif.",
+  "start_s": 13.32,
+  "end_s": 13.82,
+  "sentence": 2
+ },
+ {
+  "text": "Kasusnya,",
+  "start_s": 13.92,
+  "end_s": 14.7,
   "sentence": 3
  },
  {
-  "text": "sore,",
-  "start_s": 7.02,
-  "end_s": 7.34,
+  "text": "pengembangan",
+  "start_s": 14.76,
+  "end_s": 15.34,
   "sentence": 3
  },
  {
-  "text": "23",
-  "start_s": 7.52,
-  "end_s": 7.98,
+  "text": "dari",
+  "start_s": 15.34,
+  "end_s": 15.54,
   "sentence": 3
  },
  {
-  "text": "November",
-  "start_s": 7.98,
-  "end_s": 8.48,
+  "text": "skandal",
+  "start_s": 15.54,
+  "end_s": 16.02,
   "sentence": 3
  },
  {
-  "text": "2026,",
-  "start_s": 8.48,
-  "end_s": 9.6,
+  "text": "penyadapan",
+  "start_s": 16.02,
+  "end_s": 16.5,
+  "sentence": 3
+ },
+ {
+  "text": "ilegal",
+  "start_s": 16.5,
+  "end_s": 16.98,
+  "sentence": 3
+ },
+ {
+  "text": "terhadap",
+  "start_s": 16.98,
+  "end_s": 17.72,
   "sentence": 3
  },
  {
   "text": "Presiden",
-  "start_s": 10.16,
-  "end_s": 10.64,
+  "start_s": 17.72,
+  "end_s": 18.26,
   "sentence": 3
  },
  {
-  "text": "Prabowo",
-  "start_s": 10.64,
-  "end_s": 11.0,
+  "text": "Prabowo.",
+  "start_s": 18.26,
+  "end_s": 18.74,
   "sentence": 3
  },
  {
-  "text": "datang",
-  "start_s": 11.0,
-  "end_s": 11.5,
-  "sentence": 3
- },
- {
-  "text": "langsung",
-  "start_s": 11.5,
-  "end_s": 12.0,
-  "sentence": 3
- },
- {
-  "text": "ke",
-  "start_s": 12.0,
-  "end_s": 12.14,
-  "sentence": 3
- },
- {
-  "text": "Gedung",
-  "start_s": 12.14,
-  "end_s": 12.44,
-  "sentence": 3
- },
- {
-  "text": "MPR,",
-  "start_s": 12.44,
-  "end_s": 13.0,
-  "sentence": 3
- },
- {
-  "text": "Senayan.",
-  "start_s": 13.0,
-  "end_s": 13.42,
-  "sentence": 3
- },
- {
-  "text": "Pukul",
-  "start_s": 13.62,
-  "end_s": 14.22,
+  "text": "Versi",
+  "start_s": 18.96,
+  "end_s": 19.66,
   "sentence": 4
  },
  {
-  "text": "16.48,",
-  "start_s": 14.22,
-  "end_s": 15.1,
+  "text": "penyidik,",
+  "start_s": 19.66,
+  "end_s": 20.16,
   "sentence": 4
  },
  {
-  "text": "ia",
-  "start_s": 15.58,
-  "end_s": 15.92,
+  "text": "rencananya",
+  "start_s": 20.18,
+  "end_s": 20.76,
   "sentence": 4
  },
  {
-  "text": "menyerahkan",
-  "start_s": 15.92,
-  "end_s": 16.46,
+  "text": "berjalan",
+  "start_s": 20.76,
+  "end_s": 21.3,
   "sentence": 4
  },
  {
-  "text": "surat",
-  "start_s": 16.46,
-  "end_s": 16.84,
+  "text": "3",
+  "start_s": 21.3,
+  "end_s": 21.5,
   "sentence": 4
  },
  {
-  "text": "usulan",
-  "start_s": 16.84,
-  "end_s": 17.16,
+  "text": "tahap.",
+  "start_s": 21.5,
+  "end_s": 22.08,
   "sentence": 4
  },
  {
-  "text": "kepada",
-  "start_s": 17.16,
-  "end_s": 17.44,
-  "sentence": 4
- },
- {
-  "text": "Ketua",
-  "start_s": 17.44,
-  "end_s": 17.96,
-  "sentence": 4
- },
- {
-  "text": "MPR",
-  "start_s": 17.96,
-  "end_s": 18.44,
-  "sentence": 4
- },
- {
-  "text": "Ahmad",
-  "start_s": 18.44,
-  "end_s": 18.72,
-  "sentence": 4
- },
- {
-  "text": "Muzani.",
-  "start_s": 18.72,
-  "end_s": 19.24,
-  "sentence": 4
- },
- {
-  "text": "Isinya",
-  "start_s": 19.42,
-  "end_s": 20.08,
+  "text": "Tahap",
+  "start_s": 22.14,
+  "end_s": 22.66,
   "sentence": 5
  },
  {
-  "text": "dua",
-  "start_s": 20.08,
-  "end_s": 20.52,
-  "sentence": 5
- },
- {
-  "text": "nama.",
-  "start_s": 20.52,
-  "end_s": 20.94,
-  "sentence": 5
- },
- {
-  "text": "Satu:",
-  "start_s": 21.04,
-  "end_s": 21.78,
-  "sentence": 6
- },
- {
-  "text": "Andi",
-  "start_s": 21.8,
-  "end_s": 22.48,
-  "sentence": 6
- },
- {
-  "text": "Amran",
-  "start_s": 22.48,
+  "text": "1,",
+  "start_s": 22.66,
   "end_s": 22.8,
+  "sentence": 5
+ },
+ {
+  "text": "rapat",
+  "start_s": 23.08,
+  "end_s": 23.68,
+  "sentence": 5
+ },
+ {
+  "text": "pemufakatan",
+  "start_s": 23.68,
+  "end_s": 24.34,
+  "sentence": 5
+ },
+ {
+  "text": "3",
+  "start_s": 24.34,
+  "end_s": 24.6,
+  "sentence": 5
+ },
+ {
+  "text": "Oktober",
+  "start_s": 24.6,
+  "end_s": 25.16,
+  "sentence": 5
+ },
+ {
+  "text": "2024",
+  "start_s": 25.16,
+  "end_s": 25.72,
+  "sentence": 5
+ },
+ {
+  "text": "sebelum",
+  "start_s": 25.72,
+  "end_s": 26.98,
+  "sentence": 5
+ },
+ {
+  "text": "presiden",
+  "start_s": 26.98,
+  "end_s": 27.32,
+  "sentence": 5
+ },
+ {
+  "text": "terpilih",
+  "start_s": 27.32,
+  "end_s": 27.72,
+  "sentence": 5
+ },
+ {
+  "text": "dilantik,",
+  "start_s": 27.72,
+  "end_s": 28.16,
+  "sentence": 5
+ },
+ {
+  "text": "ditemukan",
+  "start_s": 28.16,
+  "end_s": 28.9,
+  "sentence": 5
+ },
+ {
+  "text": "dokumen",
+  "start_s": 28.9,
+  "end_s": 29.38,
+  "sentence": 5
+ },
+ {
+  "text": "analisis",
+  "start_s": 29.38,
+  "end_s": 29.78,
+  "sentence": 5
+ },
+ {
+  "text": "politik",
+  "start_s": 29.78,
+  "end_s": 30.36,
+  "sentence": 5
+ },
+ {
+  "text": "sampai",
+  "start_s": 30.36,
+  "end_s": 30.78,
+  "sentence": 5
+ },
+ {
+  "text": "analisis",
+  "start_s": 30.78,
+  "end_s": 31.58,
+  "sentence": 5
+ },
+ {
+  "text": "pemakzulan.",
+  "start_s": 31.58,
+  "end_s": 32.14,
+  "sentence": 5
+ },
+ {
+  "text": "Tahap",
+  "start_s": 32.34,
+  "end_s": 32.92,
   "sentence": 6
  },
  {
-  "text": "Sulaiman,",
-  "start_s": 22.8,
-  "end_s": 23.18,
+  "text": "2,",
+  "start_s": 32.92,
+  "end_s": 33.04,
   "sentence": 6
  },
  {
-  "text": "Menteri",
-  "start_s": 23.4,
-  "end_s": 23.9,
+  "text": "penyadapan",
+  "start_s": 33.32,
+  "end_s": 34.02,
   "sentence": 6
  },
  {
-  "text": "Pertanian.",
-  "start_s": 23.9,
-  "end_s": 24.36,
+  "text": "tokoh",
+  "start_s": 34.02,
+  "end_s": 34.38,
   "sentence": 6
  },
  {
-  "text": "Dua:",
-  "start_s": 24.5,
-  "end_s": 25.1,
-  "sentence": 7
- },
- {
-  "text": "Sugiono,",
-  "start_s": 25.32,
-  "end_s": 25.9,
-  "sentence": 7
- },
- {
-  "text": "Menteri",
-  "start_s": 26.18,
-  "end_s": 26.68,
-  "sentence": 7
- },
- {
-  "text": "Koordinator",
-  "start_s": 26.68,
-  "end_s": 27.14,
-  "sentence": 7
- },
- {
-  "text": "PMK,",
-  "start_s": 27.14,
-  "end_s": 27.78,
-  "sentence": 7
- },
- {
-  "text": "sekaligus",
-  "start_s": 27.78,
-  "end_s": 28.46,
-  "sentence": 7
- },
- {
-  "text": "Sekjen",
-  "start_s": 28.46,
-  "end_s": 28.86,
-  "sentence": 7
- },
- {
-  "text": "Gerindra.",
-  "start_s": 28.86,
-  "end_s": 29.32,
-  "sentence": 7
- },
- {
-  "text": "Nama",
-  "start_s": 29.32,
-  "end_s": 29.98,
-  "sentence": 8
- },
- {
-  "text": "Dasco",
-  "start_s": 29.98,
-  "end_s": 30.4,
-  "sentence": 8
+  "text": "tokoh",
+  "start_s": 34.38,
+  "end_s": 34.72,
+  "sentence": 6
  },
  {
   "text": "yang",
-  "start_s": 30.4,
-  "end_s": 30.58,
-  "sentence": 8
+  "start_s": 34.72,
+  "end_s": 34.9,
+  "sentence": 6
  },
  {
-  "text": "ramai",
-  "start_s": 30.58,
-  "end_s": 31.04,
-  "sentence": 8
+  "text": "dipetakan.",
+  "start_s": 34.9,
+  "end_s": 35.42,
+  "sentence": 6
  },
  {
-  "text": "digadang-gadang",
-  "start_s": 31.04,
-  "end_s": 31.76,
-  "sentence": 8
+  "text": "Tahap",
+  "start_s": 35.64,
+  "end_s": 36.18,
+  "sentence": 7
  },
  {
-  "text": "justru",
-  "start_s": 31.76,
-  "end_s": 32.28,
-  "sentence": 8
+  "text": "3,",
+  "start_s": 36.18,
+  "end_s": 36.36,
+  "sentence": 7
  },
  {
-  "text": "tidak",
-  "start_s": 32.28,
-  "end_s": 32.46,
-  "sentence": 8
- },
- {
-  "text": "ada.",
-  "start_s": 32.46,
-  "end_s": 32.82,
-  "sentence": 8
- },
- {
-  "text": "Kenapa",
-  "start_s": 33.0,
-  "end_s": 33.6,
-  "sentence": 9
- },
- {
-  "text": "harus",
-  "start_s": 33.6,
-  "end_s": 33.78,
-  "sentence": 9
- },
- {
-  "text": "dua",
-  "start_s": 33.78,
-  "end_s": 33.96,
-  "sentence": 9
- },
- {
-  "text": "nama?",
-  "start_s": 33.96,
-  "end_s": 34.28,
-  "sentence": 9
- },
- {
-  "text": "Pasal",
-  "start_s": 34.38,
-  "end_s": 35.02,
-  "sentence": 10
- },
- {
-  "text": "8",
-  "start_s": 35.02,
-  "end_s": 35.2,
-  "sentence": 10
- },
- {
-  "text": "ayat",
-  "start_s": 35.2,
-  "end_s": 35.82,
-  "sentence": 10
- },
- {
-  "text": "2",
-  "start_s": 35.82,
-  "end_s": 35.96,
-  "sentence": 10
- },
- {
-  "text": "UUD",
-  "start_s": 35.96,
-  "end_s": 36.64,
-  "sentence": 10
- },
- {
-  "text": "1945",
-  "start_s": 36.64,
+  "text": "permulaan",
+  "start_s": 36.72,
   "end_s": 37.56,
-  "sentence": 10
+  "sentence": 7
  },
  {
-  "text": "mengatur:",
+  "text": "pelaksanaan.",
   "start_s": 37.56,
+  "end_s": 38.2,
+  "sentence": 7
+ },
+ {
+  "text": "Motifnya,",
+  "start_s": 38.34,
   "end_s": 39.18,
-  "sentence": 10
+  "sentence": 8
  },
  {
-  "text": "jika",
-  "start_s": 39.38,
-  "end_s": 40.02,
-  "sentence": 10
+  "text": "kata",
+  "start_s": 39.22,
+  "end_s": 39.58,
+  "sentence": 8
  },
  {
-  "text": "kursi",
-  "start_s": 40.02,
-  "end_s": 40.3,
-  "sentence": 10
+  "text": "Kabareskrim,",
+  "start_s": 39.58,
+  "end_s": 40.14,
+  "sentence": 8
  },
  {
-  "text": "wakil",
+  "text": "mempertahankan",
   "start_s": 40.3,
-  "end_s": 40.5,
+  "end_s": 41.2,
+  "sentence": 8
+ },
+ {
+  "text": "jabatan",
+  "start_s": 41.2,
+  "end_s": 41.52,
+  "sentence": 8
+ },
+ {
+  "text": "Kapolri",
+  "start_s": 41.52,
+  "end_s": 42.08,
+  "sentence": 8
+ },
+ {
+  "text": "demi",
+  "start_s": 42.08,
+  "end_s": 42.34,
+  "sentence": 8
+ },
+ {
+  "text": "konstelasi",
+  "start_s": 42.34,
+  "end_s": 43.02,
+  "sentence": 8
+ },
+ {
+  "text": "politik",
+  "start_s": 43.02,
+  "end_s": 43.56,
+  "sentence": 8
+ },
+ {
+  "text": "dengan",
+  "start_s": 43.56,
+  "end_s": 43.88,
+  "sentence": 8
+ },
+ {
+  "text": "melemahkan",
+  "start_s": 43.88,
+  "end_s": 44.62,
+  "sentence": 8
+ },
+ {
+  "text": "kepercayaan",
+  "start_s": 44.62,
+  "end_s": 45.18,
+  "sentence": 8
+ },
+ {
+  "text": "publik",
+  "start_s": 45.18,
+  "end_s": 45.58,
+  "sentence": 8
+ },
+ {
+  "text": "pada",
+  "start_s": 45.58,
+  "end_s": 45.78,
+  "sentence": 8
+ },
+ {
+  "text": "pemerintah.",
+  "start_s": 45.78,
+  "end_s": 46.5,
+  "sentence": 8
+ },
+ {
+  "text": "Para",
+  "start_s": 46.58,
+  "end_s": 47.0,
+  "sentence": 9
+ },
+ {
+  "text": "tersangka",
+  "start_s": 47.0,
+  "end_s": 47.58,
+  "sentence": 9
+ },
+ {
+  "text": "dijerat",
+  "start_s": 47.58,
+  "end_s": 48.02,
+  "sentence": 9
+ },
+ {
+  "text": "pasal",
+  "start_s": 48.02,
+  "end_s": 48.4,
+  "sentence": 9
+ },
+ {
+  "text": "makar,",
+  "start_s": 48.4,
+  "end_s": 48.86,
+  "sentence": 9
+ },
+ {
+  "text": "ancamannya",
+  "start_s": 48.92,
+  "end_s": 49.66,
+  "sentence": 9
+ },
+ {
+  "text": "pidana",
+  "start_s": 49.66,
+  "end_s": 50.16,
+  "sentence": 9
+ },
+ {
+  "text": "mati,",
+  "start_s": 50.16,
+  "end_s": 50.66,
+  "sentence": 9
+ },
+ {
+  "text": "penjara",
+  "start_s": 50.66,
+  "end_s": 51.28,
+  "sentence": 9
+ },
+ {
+  "text": "seumur",
+  "start_s": 51.28,
+  "end_s": 51.68,
+  "sentence": 9
+ },
+ {
+  "text": "hidup,",
+  "start_s": 51.68,
+  "end_s": 52.06,
+  "sentence": 9
+ },
+ {
+  "text": "atau",
+  "start_s": 52.06,
+  "end_s": 52.44,
+  "sentence": 9
+ },
+ {
+  "text": "20",
+  "start_s": 52.44,
+  "end_s": 52.96,
+  "sentence": 9
+ },
+ {
+  "text": "tahun",
+  "start_s": 52.96,
+  "end_s": 53.3,
+  "sentence": 9
+ },
+ {
+  "text": "penjara.",
+  "start_s": 53.3,
+  "end_s": 53.76,
+  "sentence": 9
+ },
+ {
+  "text": "Penyidik",
+  "start_s": 53.92,
+  "end_s": 54.66,
   "sentence": 10
  },
  {
-  "text": "presiden",
-  "start_s": 40.5,
-  "end_s": 40.72,
+  "text": "memeriksa",
+  "start_s": 54.66,
+  "end_s": 55.06,
   "sentence": 10
  },
  {
-  "text": "kosong,",
-  "start_s": 40.72,
-  "end_s": 41.1,
+  "text": "71",
+  "start_s": 55.06,
+  "end_s": 55.72,
   "sentence": 10
  },
  {
-  "text": "presiden",
-  "start_s": 41.18,
-  "end_s": 41.74,
-  "sentence": 10
- },
- {
-  "text": "mengusulkan",
-  "start_s": 41.74,
-  "end_s": 42.32,
-  "sentence": 10
- },
- {
-  "text": "dua",
-  "start_s": 42.32,
-  "end_s": 42.58,
-  "sentence": 10
- },
- {
-  "text": "calon,",
-  "start_s": 42.58,
-  "end_s": 43.1,
+  "text": "saksi",
+  "start_s": 55.72,
+  "end_s": 56.34,
   "sentence": 10
  },
  {
   "text": "dan",
-  "start_s": 43.12,
-  "end_s": 43.46,
-  "sentence": 10
- },
- {
-  "text": "MPR",
-  "start_s": 43.46,
-  "end_s": 43.96,
-  "sentence": 10
- },
- {
-  "text": "memilih",
-  "start_s": 43.96,
-  "end_s": 44.48,
-  "sentence": 10
- },
- {
-  "text": "satu",
-  "start_s": 44.48,
-  "end_s": 44.8,
-  "sentence": 10
- },
- {
-  "text": "di",
-  "start_s": 44.8,
-  "end_s": 45.02,
-  "sentence": 10
- },
- {
-  "text": "sidang",
-  "start_s": 45.02,
-  "end_s": 45.28,
-  "sentence": 10
- },
- {
-  "text": "paripurna.",
-  "start_s": 45.28,
-  "end_s": 45.74,
-  "sentence": 10
- },
- {
-  "text": "Jadwalnya",
-  "start_s": 46.06,
-  "end_s": 46.82,
-  "sentence": 11
- },
- {
-  "text": "sempat",
-  "start_s": 46.82,
-  "end_s": 47.3,
-  "sentence": 11
- },
- {
-  "text": "digugat.",
-  "start_s": 47.3,
-  "end_s": 47.7,
-  "sentence": 11
- },
- {
-  "text": "Mahfud",
-  "start_s": 47.86,
-  "end_s": 48.42,
-  "sentence": 12
- },
- {
-  "text": "MD",
-  "start_s": 48.42,
-  "end_s": 48.64,
-  "sentence": 12
- },
- {
-  "text": "mengingatkan,",
-  "start_s": 48.64,
-  "end_s": 49.34,
-  "sentence": 12
- },
- {
-  "text": "hitungan",
-  "start_s": 49.48,
-  "end_s": 50.18,
-  "sentence": 12
- },
- {
-  "text": "14",
-  "start_s": 50.18,
-  "end_s": 50.38,
-  "sentence": 12
- },
- {
-  "text": "hari",
-  "start_s": 50.38,
-  "end_s": 50.82,
-  "sentence": 12
- },
- {
-  "text": "sebelum",
-  "start_s": 50.82,
-  "end_s": 51.3,
-  "sentence": 12
- },
- {
-  "text": "sidang",
-  "start_s": 51.3,
-  "end_s": 51.68,
-  "sentence": 12
- },
- {
-  "text": "adalah",
-  "start_s": 51.68,
-  "end_s": 51.9,
-  "sentence": 12
- },
- {
-  "text": "hari",
-  "start_s": 51.9,
-  "end_s": 52.3,
-  "sentence": 12
- },
- {
-  "text": "kerja,",
-  "start_s": 52.3,
-  "end_s": 52.84,
-  "sentence": 12
- },
- {
-  "text": "bukan",
-  "start_s": 52.9,
-  "end_s": 53.32,
-  "sentence": 12
- },
- {
-  "text": "hari",
-  "start_s": 53.32,
-  "end_s": 53.62,
-  "sentence": 12
- },
- {
-  "text": "kalender.",
-  "start_s": 53.62,
-  "end_s": 54.1,
-  "sentence": 12
- },
- {
-  "text": "MPR",
-  "start_s": 54.26,
-  "end_s": 55.02,
-  "sentence": 13
- },
- {
-  "text": "mendengar.",
-  "start_s": 55.02,
-  "end_s": 55.56,
-  "sentence": 13
- },
- {
-  "text": "Sidang",
-  "start_s": 55.64,
-  "end_s": 56.34,
-  "sentence": 14
- },
- {
-  "text": "digeser",
   "start_s": 56.34,
-  "end_s": 56.84,
-  "sentence": 14
+  "end_s": 56.74,
+  "sentence": 10
  },
  {
-  "text": "dari",
-  "start_s": 56.84,
-  "end_s": 56.98,
-  "sentence": 14
+  "text": "menyita",
+  "start_s": 56.74,
+  "end_s": 57.26,
+  "sentence": 10
  },
  {
-  "text": "9",
-  "start_s": 56.98,
-  "end_s": 57.36,
-  "sentence": 14
+  "text": "uang",
+  "start_s": 57.26,
+  "end_s": 57.52,
+  "sentence": 10
  },
  {
-  "text": "Desember",
-  "start_s": 57.36,
-  "end_s": 57.88,
-  "sentence": 14
+  "text": "tunai",
+  "start_s": 57.52,
+  "end_s": 57.9,
+  "sentence": 10
  },
  {
-  "text": "menjadi",
-  "start_s": 57.88,
-  "end_s": 58.26,
-  "sentence": 14
+  "text": "735",
+  "start_s": 58.16,
+  "end_s": 58.74,
+  "sentence": 10
  },
  {
-  "text": "Jumat,",
-  "start_s": 58.26,
-  "end_s": 58.82,
-  "sentence": 14
- },
- {
-  "text": "11",
-  "start_s": 58.82,
-  "end_s": 59.0,
-  "sentence": 14
- },
- {
-  "text": "Desember",
-  "start_s": 59.0,
+  "text": "juta",
+  "start_s": 58.74,
   "end_s": 59.72,
-  "sentence": 14
+  "sentence": 10
  },
  {
-  "text": "2026,",
+  "text": "rupiah.",
   "start_s": 59.72,
-  "end_s": 60.62,
-  "sentence": 14
+  "end_s": 60.2,
+  "sentence": 10
  },
  {
-  "text": "setelah",
-  "start_s": 60.62,
-  "end_s": 61.54,
-  "sentence": 14
+  "text": "Tapi",
+  "start_s": 60.24,
+  "end_s": 60.74,
+  "sentence": 11
  },
  {
-  "text": "tim",
-  "start_s": 61.54,
-  "end_s": 61.7,
-  "sentence": 14
+  "text": "ingat,",
+  "start_s": 60.74,
+  "end_s": 61.16,
+  "sentence": 11
  },
  {
-  "text": "verifikasi",
-  "start_s": 61.7,
-  "end_s": 62.36,
-  "sentence": 14
- },
- {
-  "text": "memeriksa",
-  "start_s": 62.36,
-  "end_s": 62.84,
-  "sentence": 14
- },
- {
-  "text": "berkas",
-  "start_s": 62.84,
-  "end_s": 63.22,
-  "sentence": 14
- },
- {
-  "text": "kedua",
-  "start_s": 63.22,
-  "end_s": 63.54,
-  "sentence": 14
- },
- {
-  "text": "calon",
-  "start_s": 63.54,
-  "end_s": 63.92,
-  "sentence": 14
- },
- {
-  "text": "selama",
-  "start_s": 63.92,
-  "end_s": 64.32,
-  "sentence": 14
- },
- {
-  "text": "14",
-  "start_s": 64.32,
-  "end_s": 64.66,
-  "sentence": 14
- },
- {
-  "text": "hari",
-  "start_s": 64.66,
-  "end_s": 65.08,
-  "sentence": 14
- },
- {
-  "text": "kerja.",
-  "start_s": 65.08,
-  "end_s": 65.5,
-  "sentence": 14
- },
- {
-  "text": "Satu",
-  "start_s": 65.58,
-  "end_s": 66.32,
-  "sentence": 15
- },
- {
-  "text": "dari",
-  "start_s": 66.32,
-  "end_s": 66.44,
-  "sentence": 15
- },
- {
-  "text": "dua",
-  "start_s": 66.44,
-  "end_s": 66.7,
-  "sentence": 15
- },
- {
-  "text": "nama",
-  "start_s": 66.7,
-  "end_s": 67.02,
-  "sentence": 15
+  "text": "semua",
+  "start_s": 61.18,
+  "end_s": 61.64,
+  "sentence": 11
  },
  {
   "text": "ini",
-  "start_s": 67.02,
-  "end_s": 67.22,
-  "sentence": 15
+  "start_s": 61.64,
+  "end_s": 62.04,
+  "sentence": 11
  },
  {
-  "text": "akan",
-  "start_s": 67.22,
-  "end_s": 67.66,
-  "sentence": 15
+  "text": "masih",
+  "start_s": 62.04,
+  "end_s": 62.46,
+  "sentence": 11
  },
  {
-  "text": "mendampingi",
-  "start_s": 67.66,
-  "end_s": 68.3,
-  "sentence": 15
+  "text": "dugaan.",
+  "start_s": 62.46,
+  "end_s": 63.2,
+  "sentence": 11
  },
  {
-  "text": "Prabowo",
+  "text": "Belum",
+  "start_s": 63.2,
+  "end_s": 63.78,
+  "sentence": 12
+ },
+ {
+  "text": "ada",
+  "start_s": 63.78,
+  "end_s": 63.9,
+  "sentence": 12
+ },
+ {
+  "text": "putusan",
+  "start_s": 63.9,
+  "end_s": 64.32,
+  "sentence": 12
+ },
+ {
+  "text": "pengadilan,",
+  "start_s": 64.32,
+  "end_s": 64.9,
+  "sentence": 12
+ },
+ {
+  "text": "dan",
+  "start_s": 64.9,
+  "end_s": 65.22,
+  "sentence": 12
+ },
+ {
+  "text": "para",
+  "start_s": 65.22,
+  "end_s": 65.48,
+  "sentence": 12
+ },
+ {
+  "text": "tersangka",
+  "start_s": 65.48,
+  "end_s": 66.04,
+  "sentence": 12
+ },
+ {
+  "text": "berhak",
+  "start_s": 66.04,
+  "end_s": 66.5,
+  "sentence": 12
+ },
+ {
+  "text": "atas",
+  "start_s": 66.5,
+  "end_s": 66.9,
+  "sentence": 12
+ },
+ {
+  "text": "praduga",
+  "start_s": 66.9,
+  "end_s": 67.34,
+  "sentence": 12
+ },
+ {
+  "text": "tak",
+  "start_s": 67.34,
+  "end_s": 67.6,
+  "sentence": 12
+ },
+ {
+  "text": "bersalah.",
+  "start_s": 67.6,
+  "end_s": 68.08,
+  "sentence": 12
+ },
+ {
+  "text": "Pertanyaannya,",
   "start_s": 68.3,
-  "end_s": 68.66,
-  "sentence": 15
+  "end_s": 69.14,
+  "sentence": 13
  },
  {
-  "text": "sampai",
-  "start_s": 68.66,
-  "end_s": 69.04,
-  "sentence": 15
+  "text": "kalau",
+  "start_s": 69.3,
+  "end_s": 69.78,
+  "sentence": 13
  },
  {
-  "text": "2029.",
-  "start_s": 69.04,
-  "end_s": 70.02,
-  "sentence": 15
+  "text": "tuduhan",
+  "start_s": 69.78,
+  "end_s": 70.26,
+  "sentence": 13
  },
  {
-  "text": "Menurutmu,",
+  "text": "seberat",
+  "start_s": 70.26,
+  "end_s": 70.62,
+  "sentence": 13
+ },
+ {
+  "text": "ini",
   "start_s": 70.62,
-  "end_s": 71.38,
-  "sentence": 16
+  "end_s": 70.82,
+  "sentence": 13
  },
  {
-  "text": "siapa",
-  "start_s": 71.4,
-  "end_s": 71.9,
-  "sentence": 16
+  "text": "diarahkan",
+  "start_s": 70.82,
+  "end_s": 71.54,
+  "sentence": 13
+ },
+ {
+  "text": "ke",
+  "start_s": 71.54,
+  "end_s": 71.68,
+  "sentence": 13
+ },
+ {
+  "text": "mantan",
+  "start_s": 71.68,
+  "end_s": 72.26,
+  "sentence": 13
+ },
+ {
+  "text": "pimpinan",
+  "start_s": 72.26,
+  "end_s": 72.66,
+  "sentence": 13
+ },
+ {
+  "text": "polisi",
+  "start_s": 72.66,
+  "end_s": 73.0,
+  "sentence": 13
+ },
+ {
+  "text": "tertinggi,",
+  "start_s": 73.0,
+  "end_s": 73.66,
+  "sentence": 13
+ },
+ {
+  "text": "apa",
+  "start_s": 73.7,
+  "end_s": 74.22,
+  "sentence": 13
  },
  {
   "text": "yang",
-  "start_s": 71.9,
-  "end_s": 72.04,
-  "sentence": 16
+  "start_s": 74.22,
+  "end_s": 74.54,
+  "sentence": 13
  },
  {
-  "text": "lebih",
-  "start_s": 72.04,
-  "end_s": 72.2,
-  "sentence": 16
+  "text": "sebenarnya",
+  "start_s": 74.54,
+  "end_s": 74.94,
+  "sentence": 13
  },
  {
-  "text": "pantas:",
-  "start_s": 72.2,
-  "end_s": 72.72,
-  "sentence": 16
+  "text": "terjadi",
+  "start_s": 74.94,
+  "end_s": 75.52,
+  "sentence": 13
  },
  {
-  "text": "Amran,",
-  "start_s": 72.8,
-  "end_s": 73.48,
-  "sentence": 16
+  "text": "di",
+  "start_s": 75.52,
+  "end_s": 75.66,
+  "sentence": 13
  },
  {
-  "text": "atau",
-  "start_s": 73.48,
-  "end_s": 73.66,
-  "sentence": 16
+  "text": "dalam",
+  "start_s": 75.66,
+  "end_s": 75.84,
+  "sentence": 13
  },
  {
-  "text": "Sugiono?",
-  "start_s": 73.66,
-  "end_s": 74.32,
-  "sentence": 16
+  "text": "institusi",
+  "start_s": 75.84,
+  "end_s": 76.38,
+  "sentence": 13
+ },
+ {
+  "text": "itu?",
+  "start_s": 76.38,
+  "end_s": 76.58,
+  "sentence": 13
  }
 ]
