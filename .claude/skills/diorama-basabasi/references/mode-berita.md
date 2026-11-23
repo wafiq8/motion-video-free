@@ -13,6 +13,10 @@ atas keputusannya sendiri: style ini "pas buat style news/berita".
 Amendemen 23 Nov 2026 (dari review user atas produksi Mode D
 pertama): tiga aturan ditambah — foto tokoh wajib, latar tidak
 boleh diam, dan lapisan efek suara (SFX) wajib tipis.
+Amendemen v3.4 (23 Nov 2026, review user produksi pertama): foto
+peristiwa AKTUAL wajib dicari lewat liputan berita, lalu dilacak
+ke sumber aslinya (hierarki sumber foto); foto tokoh wajib versi
+TERBARU (potret resmi masa jabatan berjalan).
 
 ## Pengecualian terkunci (HANYA berlaku di Mode D)
 
@@ -98,6 +102,52 @@ ditandai, tidak ada CTA jualan).
 - Avatar inisial/siluet HANYA cadangan bila foto benar-benar
   tidak ditemukan setelah dicari — dan pemakaiannya WAJIB
   dinyatakan eksplisit di laporan produksi, tidak diam-diam.
+- Foto tokoh WAJIB versi TERBARU: utamakan potret resmi masa
+  jabatan berjalan (mis. potret DPR/MPR/kabinet periode
+  sekarang). Foto lama (>3 tahun) atau cuplikan frame video hanya
+  cadangan, dan labelnya "foto arsip <tahun>" wajib tampil.
+
+## Hierarki sumber foto (amendemen v3.4)
+
+Momen PERISTIWA-nya sendiri (penyerahan surat, sidang, lokasi
+kejadian) WAJIB diusahakan tampil dengan foto peristiwa itu —
+foto arsip acara lain hanya cadangan berlabel "FOTO ARSIP".
+Cara mencarinya: telusuri liputan berita peristiwa itu (pencarian
+gambar/berita: Kompas, detik, ANTARA, CNN Indonesia, Tempo, kanal
+YouTube media & lembaga). Liputan berita dipakai untuk MENEMUKAN
+foto, lalu foto dilacak ke sumber ASLINYA. Pakai urutan ini:
+
+1. **Rilis resmi lembaga pemerintah RI** — Sekretariat Presiden /
+   BPMI Setpres, Setkab, Kemensetneg, MPR, DPR, DPD, kementerian,
+   KPU, pemda. Foto/rilis yang dipublikasikan lembaga negara
+   berstatus domain publik di Indonesia (UU 28/2014 Pasal 43 huruf
+   b; di Wikimedia Commons berlabel PD-IDGov). Banyak foto di
+   kartu berita media sebenarnya berasal dari sini (cek tulisan
+   kecil "foto: BPMI Setpres", "YouTube Sekretariat Presiden",
+   "dok. MPR") — ambil dari situs/kanal lembaganya, bukan dari
+   kartu media. Kredit: "foto: <lembaga> (<tanggal>)".
+2. **Berlisensi terbuka** — Wikimedia Commons (PD-IDGov, CC0,
+   CC BY; cek badge lisensi di halaman file), foto pers yang
+   dirilis CC BY.
+3. **Foto jurnalis media/kantor berita** (Kompas, detik, ANTARA,
+   Tempo, Getty, dsb.) — BERHAK CIPTA; kredit TIDAK sama dengan
+   izin. Hanya boleh dipakai bila operator memutuskannya untuk
+   video itu (dicatat di laporan sebagai "foto berhak cipta,
+   dipakai atas keputusan operator"), dengan kredit lengkap
+   "foto: <fotografer>/<media>". Dilarang memotong/menghapus
+   watermark, dilarang memakai kartu/thumbnail berita yang sudah
+   berisi teks/desain media lain, dan dilarang screenshot siaran
+   TV. Risiko klaim hak cipta/takedown ditanggung operator —
+   sesi wajib menyebutkannya saat mengusulkan foto kategori ini.
+4. **Cadangan** — foto arsip acara lain (berlabel FOTO ARSIP)
+   atau ilustrasi vektor; dinyatakan di laporan.
+
+Unduh file ke `public/foto/` (vendor, tanpa hotlink), catat per
+foto: URL sumber asli, pembuat/lembaga, tanggal, status lisensi,
+dan kategori hierarki (1–4) di laporan akhir. Host situs lembaga
+yang dibutuhkan (mis. presidenri.go.id, setneg.go.id, mpr.go.id,
+dpr.go.id) diminta ke allowlist environment sekali, saat pertama
+dibutuhkan.
 
 ## Caption & sitasi (lebih ketat dari inti)
 
@@ -224,8 +274,12 @@ relevan), dan 7 tidak boleh hilang.
   vektor dari kode.
 - Penutup memuat verdict + pertanyaan terbuka spesifik; BUKAN
   kesimpulan netral ala Mode A dan bukan CTA jualan.
-- Setiap tokoh pusat bernama tampil dengan foto asli terkredit;
-  avatar inisial hanya cadangan yang dinyatakan di laporan.
+- Setiap tokoh pusat bernama tampil dengan foto asli terkredit
+  versi terbaru; avatar inisial hanya cadangan yang dinyatakan di
+  laporan.
+- Momen peristiwa memakai foto peristiwa itu bila ada di
+  kategori 1–2 hierarki sumber foto; foto arsip/berhak cipta
+  dinyatakan di laporan beserta kategorinya.
 - Tidak ada scene yang seluruh elemennya diam: gerak latar halus
   berjalan dan foto selalu ber-Ken Burns.
 - Lapisan SFX hadir mengikuti peta bunyi baku dan tidak menutupi
