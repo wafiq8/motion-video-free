@@ -46,9 +46,9 @@ Timing: Whisper large-v3 (`language="id"` dipaksa), teks dari naskah. Catatan: n
 | 1 | NU Online, Kompas | — |
 | 2 | CNN Indonesia, Kompas, ANTARA | — |
 | 3 | CNN Indonesia, Kompas, ANTARA | Prabowo (Kemensetneg 2024, PD-IDGov) · PETA ILUSTRASI, TIDAK BERSKALA |
-| 4 | CNN Indonesia, Kompas, ANTARA | Latar: pidato di Gedung MPR (Setkab RI, 20/10/2024, PD-IDGov) · FOTO ARSIP 2024 · Muzani (AntaraTV, CC BY 3.0) |
+| 4 | CNN Indonesia, Kompas, ANTARA | Latar: pidato di Gedung MPR (Setkab RI, 20/10/2024, PD-IDGov) · FOTO ARSIP 2024 · Muzani (KPU RI 2023, PD-IDGov) |
 | 5 | + jabatan: Katadata, Suara | Amran (Pemprov Banten, arsip 2014, PD-IDGov) · Sugiono (Kemlu RI 2024, PD-IDGov) |
-| 6 | CNN Indonesia, Kompas | Dasco (DPR RI 2013, PD-IDGov) |
+| 6 | CNN Indonesia, Kompas | Dasco (DPR RI, potret resmi 2024–2029, PD-IDGov) |
 | 7 | UUD 1945 Pasal 8 ayat 2 | ikon siluet generik "2 calon" (bukan tokoh bernama) |
 | 8 | CNN Indonesia, detik | Mahfud MD (Kemenko Polhukam 2022, PD-IDGov) · label parafrase |
 | 9 | NU Online, Kompas | — |
@@ -62,15 +62,17 @@ Timing: Whisper large-v3 (`language="id"` dipaksa), teks dari naskah. Catatan: n
 | sugiono.jpg | "Sugiono, Menteri Luar Negeri RI (2024).jpg" — Kemlu RI | PD-IDGov | 23/11/2026 | 1280 px |
 | prabowo.jpg | "Prabowo Subianto 2024 official portrait.jpg" — Kemensetneg | PD-IDGov | 23/11/2026 | 1280 px |
 | paripurna.jpg | "Prabowo Subianto delivers first speech… 01.jpg" — Setkab RI | PD-IDGov | 23/11/2026 | 1280 px |
-| dasco.jpg | "Sufmi Dasco Ahmad.jpg" — DPR RI | PD-IDGov | 23/11/2026 | 336×448 |
+| dasco-2024.jpg | "Sufmi Dasco Ahmad, Wakil Ketua DPR-RI (2024–2029).jpg" — DPR RI | PD-IDGov | 23/11/2026 | 960×960 |
 | mahfud.png | "Mahfud MD, Menkopolhukam (2022).png" — Kemenko Polhukam | PD-IDGov | 23/11/2026 | 172×229 |
-| muzani.jpg / muzani-crop.jpg | "Ahmad Muzani.jpg" — frame AntaraTV (YouTube) | CC BY 3.0 | 23/11/2026 | 330×214 |
+| muzani-2024.jpg | "Ahmad Muzani, Gerindra candidate for Lampung I in 2024.jpg" — KPU RI | PD-IDGov | 23/11/2026 | 960×1440 |
 | SFX (whoosh, pop, tear, shutter, stamp, ding) | disintesis sendiri (`tools/sfx.py`, seed tetap) | milik sendiri | — | 240 KB |
 | Font Inter 500–900 | @fontsource/inter | SIL OFL | — | ~ 100 KB |
 
 Total foto 828 KB, SFX 240 KB. 38 cue SFX tercatat di `docs/sfx-cues.json`; puncak SFX −21,8 dBFS vs narasi −3,1 dBFS (≈ 18,7 dB di bawah). Musik: `Backsound-news.mp3` dari user, dipotong ke 75,2 dtk, ducking sidechain di bawah narasi.
 
 Waktu render (4 CPU): preview 0,5× = 53 dtk; final 1080×1920 = 123 dtk.
+
+Revisi 1 (review user): foto Dasco (2013) dan Muzani (frame video AntaraTV) diganti potret resmi terbaru — Dasco: DPR RI 2024–2029; Muzani: KPU RI 2023/2024. Hanya scene 4 & 6 yang di-render ulang (29 dtk); check_output ulang: PASS SEMUA.
 
 ## Pelonggaran gerbang
 
@@ -85,7 +87,7 @@ Tidak ada (produksi Mode D pertama — Gerbang 1 & 2 format penuh, 3 still/scene
 > Menurutmu, siapa yang lebih pantas: Amran, atau Sugiono? Tulis alasanmu di komentar.
 >
 > Sumber: CNN Indonesia, Kompas, ANTARA, NU Online, detik, Katadata.
-> Foto: Kemensetneg, Setkab RI, Kemlu RI, Pemprov Banten, DPR RI, Kemenko Polhukam (domain publik, via Wikimedia Commons); Ahmad Muzani: AntaraTV (CC BY 3.0, via Wikimedia Commons).
+> Foto: Kemensetneg, Setkab RI, Kemlu RI, Pemprov Banten, DPR RI, Kemenko Polhukam, KPU RI (domain publik, via Wikimedia Commons).
 >
 > Basabasi Berita
 > #wakilpresiden #MPR #Prabowo #AmranSulaiman #Sugiono #UUD1945 #beritaterkini #basabasi

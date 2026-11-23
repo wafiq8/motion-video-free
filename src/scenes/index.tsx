@@ -117,11 +117,11 @@ const S4: React.FC<{t: number}> = ({t}) => {
       <div style={{position: 'absolute', top: 880, left: 90, opacity: prog(t, 15.6)}}>
         <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 30, color: C.white, background: 'rgba(10,22,48,0.8)', padding: '10px 18px', borderRadius: 12}}>SURAT USULAN</div>
       </div>
-      {t >= 17.44 && <FotoKredit bawah text="foto Ahmad Muzani: AntaraTV · Wikimedia Commons (CC BY 3.0)" />}
+      {t >= 17.44 && <FotoKredit bawah text="foto Ahmad Muzani: KPU RI (2023) · Wikimedia Commons (domain publik)" />}
       <div style={{position: 'absolute', top: 1080, left: 0, right: 0, display: 'flex', justifyContent: 'center'}}>
         <Appear t={t} at={17.44}>
           <div style={{display: 'flex', alignItems: 'center', gap: 26, background: C.white, borderRadius: 120, padding: '14px 40px 14px 14px', fontFamily: FONT, color: C.bg}}>
-            <FotoBulat src="muzani-crop.jpg" size={170} t={t} a={17.44} b={19.42} pos="50% 50%" ring={C.teal} />
+            <FotoBulat src="muzani-2024.jpg" size={190} t={t} a={17.44} b={19.42} pos="50% 22%" ring={C.teal} />
             <div>
               <div style={{fontWeight: 700, fontSize: 30, letterSpacing: '0.1em'}}>DITERIMA KETUA MPR</div>
               <div style={{fontWeight: 900, fontSize: 56}}>AHMAD MUZANI</div>
@@ -173,7 +173,7 @@ const S6: React.FC<{t: number}> = ({t}) => (
     <div style={{position: 'relative'}}>
       <Pop t={t} at={29.98}>
         <div style={{width: 640, background: C.card, borderRadius: 28, padding: '40px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, border: `3px solid ${C.line}`}}>
-          <FotoBulat src="dasco.jpg" size={300} t={t} a={29.98} b={33.0} pos="50% 22%" ring={C.line} />
+          <FotoBulat src="dasco-2024.jpg" size={300} t={t} a={29.98} b={33.0} pos="45% 30%" ring={C.line} />
           <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 96, color: C.white}}>DASCO</div>
         </div>
       </Pop>
@@ -188,7 +188,7 @@ const S6: React.FC<{t: number}> = ({t}) => (
       <Headline lines={[[{text: 'TIDAK ', accent: true}, {text: 'ADA DI SURAT'}]]} max={80} />
     </Appear>
   </Col>
-  {t >= 29.98 && <FotoKredit bawah text="foto: DPR RI (2013) · Wikimedia Commons (domain publik)" />}
+  {t >= 29.98 && <FotoKredit bawah text="foto: DPR RI (2024) · Wikimedia Commons (domain publik)" />}
   </AbsoluteFill>
 );
 
