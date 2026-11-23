@@ -12,7 +12,9 @@ topik dan nama serinya sendiri. Mode D diaktifkan user 23 Nov 2026
 atas keputusannya sendiri: style ini "pas buat style news/berita".
 Amendemen 23 Nov 2026 (dari review user atas produksi Mode D
 pertama): tiga aturan ditambah — foto tokoh wajib, latar tidak
-boleh diam, dan lapisan efek suara (SFX) wajib tipis.
+boleh diam, dan lapisan efek suara (SFX) wajib tipis. Pengetatan
+lanjutan di hari yang sama: prioritas dokumentasi peristiwa di
+atas foto resmi/arsip, dan potongan foto formal wajib ter-center.
 
 ## Pengecualian terkunci (HANYA berlaku di Mode D)
 
@@ -92,9 +94,27 @@ ditandai, tidak ada CTA jualan).
   dengan kredit foto, Wikipedia/Wikimedia) dan dicatat sumber +
   kreditnya di paket produksi; kredit tampil di layar mengikuti
   aturan foto Mode D.
+- **Prioritas sumber dokumentasi (berjenjang, wajib berurutan)**:
+  (1) dokumentasi PERISTIWA itu sendiri — foto pers hari yang
+  sama dari biro pers/agensi/media (mis. BPMI Setpres, ANTARA,
+  foto wartawan media) yang memperlihatkan momennya atau tokohnya
+  di lokasi kejadian; ini wajib dicari PERTAMA. (2) foto resmi/
+  portret tokoh — hanya bila tokohnya tidak tertangkap
+  dokumentasi peristiwa. (3) foto arsip lama — jalan terakhir,
+  dan wajib dilabeli "foto arsip <tahun>" di layar. Scene momen
+  (FotoBeat) DILARANG memakai foto stok/arsip bila dokumentasi
+  peristiwanya tersedia; kartu tokoh mengutamakan crop dari
+  dokumentasi peristiwa sebelum portret studio.
 - Penempatan baku: foto lingkaran di kartu tokoh/kandidat;
   foto lingkaran kecil di samping atribusi KartuKutipan; FotoBeat
   tetap untuk momen peristiwanya.
+- **Potongan foto formal wajib ter-center**: titik potong foto
+  resmi/portret disesuaikan agar wajah subjek berada di TENGAH
+  bingkai (lingkaran/kartu), posisi vertikal di sepertiga atas,
+  dengan ruang kepala yang konsisten antar kartu dalam satu
+  video. Hasil crop diperiksa di still QC — wajah yang kepotong,
+  minggir, atau terlalu kecil/besar dibetulkan titik potongnya
+  (object-position) sebelum render, bukan dibiarkan.
 - Avatar inisial/siluet HANYA cadangan bila foto benar-benar
   tidak ditemukan setelah dicari — dan pemakaiannya WAJIB
   dinyatakan eksplisit di laporan produksi, tidak diam-diam.
@@ -226,6 +246,9 @@ relevan), dan 7 tidak boleh hilang.
   kesimpulan netral ala Mode A dan bukan CTA jualan.
 - Setiap tokoh pusat bernama tampil dengan foto asli terkredit;
   avatar inisial hanya cadangan yang dinyatakan di laporan.
+- Dokumentasi mengikuti prioritas sumber (peristiwa > resmi >
+  arsip berlabel tahun) dan potongan foto formal ter-center:
+  wajah di tengah bingkai, ruang kepala konsisten antar kartu.
 - Tidak ada scene yang seluruh elemennya diam: gerak latar halus
   berjalan dan foto selalu ber-Ken Burns.
 - Lapisan SFX hadir mengikuti peta bunyi baku dan tidak menutupi
