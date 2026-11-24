@@ -1,7 +1,8 @@
 import React from 'react';
 import {Composition} from 'remotion';
 import {Video} from './Video';
-import {OutroComp} from './outro';
+import {OutroComp, OutroLautComp} from './outro';
+import {outroLautDefaults} from './outro/OutroBasabasiLaut';
 import tl from '../docs/timeline.json';
 
 export const FPS = 30;
@@ -11,5 +12,6 @@ export const Root: React.FC = () => (
   <>
     <Composition id="Berita" component={Video} durationInFrames={TOTAL_FRAMES} fps={FPS} width={1080} height={1920} />
     <Composition id="OutroBasabasi" component={OutroComp} durationInFrames={90} fps={30} width={1080} height={1920} defaultProps={{muted: false}} />
+    <Composition id="OutroBasabasiLaut" component={OutroLautComp} durationInFrames={195} fps={30} width={1080} height={1920} defaultProps={outroLautDefaults} />
   </>
 );

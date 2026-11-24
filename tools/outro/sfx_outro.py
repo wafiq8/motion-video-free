@@ -52,18 +52,22 @@ CUES = [('whoosh', 0, water_whoosh, -18), ('splash', 17, splash, -24), ('pop1', 
 def save(path, x):
     with wave.open(path, 'wb') as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((np.clip(x, -1, 1) * 32767).astype(np.int16).tobytes())
-os.makedirs('public/outro/sfx', exist_ok=True)
-track = np.zeros(int(DUR * SR)); layers = {}
-for name, fr, fn, pk in CUES:
-    x = fn() * db(pk); save(f'public/outro/sfx/{name}.wav', x)
-    st = int(fr / FPS * SR); seg = x[:len(track) - st]; track[st:st + len(seg)] += seg
-    lay = np.zeros_like(track); lay[st:st + len(seg)] = seg; layers[name] = lay
-# fade-out pendek 30 ms di ujung agar tak ada klik (ekor ding)
-track[-int(0.03 * SR):] *= np.linspace(1, 0, int(0.03 * SR))
-save('public/outro/sfx-outro.wav', track)
-print('peak total dBFS %.1f' % (20 * np.log10(np.abs(track).max())))
-# cek tabrakan: per cue, level lapisan lain saat cue ini memuncak
-for name, fr, fn, pk in CUES:
-    st = int(fr / FPS * SR); w = slice(st, st + int(0.05 * SR))
-    others = sum(l for k, l in layers.items() if k != name)
-    o = np.abs(others[w]).max(); print(f'{name:7s} f{fr:<3d} peak {pk} dBFS, lapisan lain saat itu {20*np.log10(o+1e-9):6.1f} dBFS')
+def main():
+    os.makedirs('public/outro/sfx', exist_ok=True)
+    track = np.zeros(int(DUR * SR)); layers = {}
+    for name, fr, fn, pk in CUES:
+        x = fn() * db(pk); save(f'public/outro/sfx/{name}.wav', x)
+        st = int(fr / FPS * SR); seg = x[:len(track) - st]; track[st:st + len(seg)] += seg
+        lay = np.zeros_like(track); lay[st:st + len(seg)] = seg; layers[name] = lay
+    # fade-out pendek 30 ms di ujung agar tak ada klik (ekor ding)
+    track[-int(0.03 * SR):] *= np.linspace(1, 0, int(0.03 * SR))
+    save('public/outro/sfx-outro.wav', track)
+    print('peak total dBFS %.1f' % (20 * np.log10(np.abs(track).max())))
+    # cek tabrakan: per cue, level lapisan lain saat cue ini memuncak
+    for name, fr, fn, pk in CUES:
+        st = int(fr / FPS * SR); w = slice(st, st + int(0.05 * SR))
+        others = sum(l for k, l in layers.items() if k != name)
+        o = np.abs(others[w]).max(); print(f'{name:7s} f{fr:<3d} peak {pk} dBFS, lapisan lain saat itu {20*np.log10(o+1e-9):6.1f} dBFS')
+
+if __name__ == '__main__':
+    main()
